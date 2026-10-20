@@ -1,0 +1,18 @@
+[
+ {"id":"R1","role":"Zhuge Liang","play":"Empty City Stratagem (Kongcheng Ji)","hangdang":"laosheng (older male role)",
+  "spec":"wearing the bagua robe (bagua yi) decorated with Eight Trigrams symbols, bagua scarf hat (bagua jin), holding a feather fan, long black three-part beard (hei sanran)"},
+ {"id":"R2","role":"Guan Yu","play":"Single Sword Meeting (Dandao Hui)","hangdang":"hongsheng (red-faced male role)",
+  "spec":"wearing a green python robe (lü mang) with dragon embroidery, Fuzi helmet (fuzi kui), jade belt, red painted face, long black five-strand beard"},
+ {"id":"R3","role":"Yang Yuhuan","play":"The Drunken Concubine (Guifei Zui Jiu)","hangdang":"huashan (female lead)",
+  "spec":"wearing a female python robe (nü mang) with phoenix embroidery, phoenix crown (feng guan), cloud collar (yun jian), jade belt, white water sleeves, beauty makeup without beard"},
+ {"id":"R4","role":"Mu Guiying","play":"Mu Guiying Takes Command (Mu Guiying Gua Shuai)","hangdang":"daomadan (martial female role)",
+  "spec":"wearing female armor (nü kao) with four triangular back flags (kao qi), headdress with two long pheasant feathers (lingzi), beauty makeup"},
+ {"id":"R5","role":"Bao Zheng","play":"Case of Chen Shimei (Zha Mei An)","hangdang":"tongchui hualian (painted-face role)",
+  "spec":"wearing a black python robe (hei mang) with dragon embroidery, black minister hat with horizontal wings (xiang diao), jade belt, all-black painted face with a white crescent moon on the forehead, full black beard"},
+ {"id":"R6","role":"Zhao Yun","play":"Changban Slope (Changban Po)","hangdang":"wusheng (martial male role)",
+  "spec":"wearing white armor (bai kao) with four triangular back flags (kao qi), warrior helmet, holding a spear, beauty makeup without beard"},
+ {"id":"R7","role":"Su San","play":"Yu Tang Chun - Escorting the Prisoner (Qi Jie)","hangdang":"qingyi (virtuous female role)",
+  "spec":"wearing red prisoner's jacket and skirt (zui yi zui qun), simple head wrap without crown, fish-shaped wooden cangue (yu jia) on the neck, white water sleeves, beauty makeup"},
+ {"id":"R8","role":"Jiang Gan","play":"Gathering of Heroes (Qunying Hui)","hangdang":"wenchou (civil clown role)",
+  "spec":"wearing a scholar's pleated robe (xuezi), square scholar hat (fang jin), small white tofu-block patch painted around the eyes and nose"}
+]
