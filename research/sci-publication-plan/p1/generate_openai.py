@@ -4,6 +4,7 @@ Run on your own computer:
     pip install openai
     export OPENAI_API_KEY=sk-...          # Windows: set OPENAI_API_KEY=sk-...
     python generate_openai.py --model gpt-image-1 --n 5
+    python generate_openai.py --strategies P1    # only the free-prompt condition
 P3 needs one reference image per role at refs/R1.jpg ... refs/R8.jpg; roles without one are skipped.
 Re-running skips files that already exist, so an interrupted run can resume.
 """
@@ -29,6 +30,7 @@ def main():
     ap.add_argument("--n", type=int, default=5)
     ap.add_argument("--size", default="1024x1024")
     ap.add_argument("--out", default="images")
+    ap.add_argument("--strategies", default="P1,P2,P3", help="comma-separated subset, e.g. P1")
     args = ap.parse_args()
 
     client = OpenAI()
@@ -43,7 +45,7 @@ def main():
         if new_log:
             log.writerow(["file", "model", "strategy", "role_id", "rep", "prompt", "timestamp_utc", "status"])
         for r in roles:
-            for strategy in ("P1", "P2", "P3"):
+            for strategy in args.strategies.split(","):
                 ref = here / "refs" / f"{r['id']}.jpg"
                 if strategy == "P3" and not ref.exists():
                     continue
