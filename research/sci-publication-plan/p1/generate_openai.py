@@ -11,13 +11,7 @@ Re-running skips files that already exist, so an interrupted run can resume.
 import argparse, base64, csv, datetime, json, pathlib
 from openai import OpenAI
 
-BASE = "A traditional Peking opera stage costume for {role} in the play {play}, {hangdang}. Full-body view of one performer, front-facing, plain light grey background, photographic realism."
-STRUCT = " The costume must follow Peking opera dress codes: {spec}."
-
-
-def prompt_for(r, strategy):
-    p = BASE.format(**r)
-    return p if strategy == "P1" else p + STRUCT.format(**r)
+from prompts import prompt_for
 
 
 def save(b64, path):
