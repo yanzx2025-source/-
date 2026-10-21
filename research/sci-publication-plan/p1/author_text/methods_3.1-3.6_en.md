@@ -115,15 +115,23 @@ Each image was coded on six dimensions:
 
 Each dimension was coded 0 (compliant), 1 (violation) or 9 (not visible, or not applicable to the role).
 
-The criteria were taken from Han's (2019a, 2019b) accounts of the form and motifs of the python robe, *pei*, armour and *xuezi*, and from Cui et al.'s (2020) discussion of the ranking of colours in Peking opera costume. [Check: see review note 3.]
+The criteria come from two layers of sources:
+
+- **Garment type, motif and colour** follow Han's (2019a, 2019b) systematic accounts of the python robe, *pei*, armour and *xuezi*, and Cui et al.'s (2020) discussion of the ranking of colours in Peking opera costume.
+- **Role markers** follow monographs on the Peking opera wardrobe and costume catalogues (Liu, 2002; Tan, 2008) together with standard stage practice. These markers are the bagua robe and bagua scarf hat, pheasant plumes, back flags, the cangue, the clown's tofu-block face and the spear. [Check: page numbers for Liu (2002) and Tan (2008); see review note 1.]
 
 To avoid recording "drawn badly" as "dressed wrongly", I applied one rule throughout. D1 was coded as a violation only when the class of the main garment was wrong. Differences in detail, such as stitch type, density of decoration, sleeve width or fabric texture, were not counted as violations. Motif was likewise judged by type only, for example a python robe without dragons or the presence of a Japanese family crest, and not by the fineness of the work.
 
-Blind coding was organised in 48 contact sheets. Each sheet showed the three images generated for one cell, meaning one channel, one strategy and one role. The sheet was labelled only with the role and a sheet number, without channel, strategy or generation time, and the order of the sheets was shuffled. Sheet numbers corresponded one to one with the 144 rows of the coding table.
+Blind coding was organised in 48 contact sheets. Each sheet showed the three images generated for one cell (one channel, one strategy and one role), that is, three replicates of the same condition. The sheet was labelled only with the role and a sheet number, without channel, strategy or generation time. Both the order of the sheets and the order of images within each sheet were shuffled. [Check: the script shuffled the order of the sheets only; images within a sheet are in replicate order 1–3. See review note 3.] Sheet numbers corresponded one to one with the 144 rows of the coding table.
 
-Blinding was not complete. Every Hunyuan Image Alpha image carries the platform watermark "AI生成 WORKBUDDY", so the channel of these 48 images could be recognised during coding. In addition, one Hunyuan image carries a third-party stock-photo watermark. I report this openly.
+Blinding was not complete, because two kinds of cue revealed the channel:
 
-Coder A is the author. [Check: see review note 2 on how to describe the author's background.] Coder B was Claude, a large language model. It coded all 144 images independently with the same codebook and had no access to coder A's results; coder A likewise coded without seeing coder B's results.
+- All 48 Hunyuan Image Alpha images carry the text watermark "AI生成 WORKBUDDY" in the lower right corner.
+- All 48 Muse images were portrait originals padded to 1:1, and the grey side bands do not exactly match the background.
+
+The 48 Doubao images show no such traces. About two thirds of the 144 images could therefore be attributed to a channel at the time of coding. Comparisons between channels are not strictly blind and may have been influenced by this, as noted in the limitations.
+
+Coder A is the author. [Check: background to be added; see review note 2.] Coder B was Claude, a large language model. It coded all 144 images independently with the same codebook and had no access to coder A's results; coder A likewise coded without seeing coder B's results.
 
 Each disagreement was checked against the sources. Nine were settled by an explicit rule in the codebook; for example, imperial yellow on a role whose colour is not scored is coded D2 = 1. All other disagreements were settled by the author's judgement. The reason for every decision is recorded in the adjudication log (Appendix D).
 
