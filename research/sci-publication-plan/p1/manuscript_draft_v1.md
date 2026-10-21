@@ -333,10 +333,10 @@ When asked for a named Peking opera role, current T2I systems often produce cost
 - Liu, K., Lin, K., & Zhu, C. (2023). Research on Chinese traditional opera costume recognition based on improved YOLOv5. *Heritage Science, 11*, 1–14. https://doi.org/10.1186/s40494-023-00883-x
 - Rizzi, G., & Bertola, P. (2025). Exploring the generative AI potential in the fashion design process: An experimental experience on the collaboration between fashion design practitioners and generative AI tools. *European Journal of Cultural Management and Policy, 15*. https://doi.org/10.3389/ejcmp.2025.13875
 - Ventura, M., Ben-David, E., Korhonen, A., & Reichart, R. (2025). Navigating cultural chasms: Exploring and unlocking the cultural POV of text-to-image models. *Transactions of the Association for Computational Linguistics, 13*, 142–166. https://doi.org/10.1162/tacl_a_00732
-- 刘士瑾 (2025). 基于条件扩散模型的良渚纹样在国潮服装设计中的应用研究与评价 [Application and evaluation of Liangzhu patterns in Guochao fashion design based on a conditional diffusion model]. *设计 [Design]*, 38(9). [pages from CNKI]
+- 刘士瑾 (2025). 基于条件扩散模型的良渚纹样在国潮服装设计中的应用研究与评价 [Application and evaluation of Liangzhu patterns in Guochao fashion design based on a conditional diffusion model]. *设计 [Design]*, 38(9), 9–13.
 - 孙小杰 (2019). 戏曲服装穿戴管理人才培养的现代学徒制方式 [A modern apprenticeship model for training opera costume wardrobe staff]. *戏曲艺术 [Journal of Traditional Chinese Theatre]*, 40(4). [pages from CNKI]
-- 孙雨蓝, 迟诚, & 刘换洁 (2024). 基于AIGC技术的土家织锦纹样创新设计研究 [Innovative design of Tujia brocade patterns based on AIGC]. *东华大学学报(社会科学版) [Journal of Donghua University (Social Sciences)]*, 24(4). [pages from CNKI]
-- 易慎 (2025). 传统戏曲服饰AIGC智能设计范式的构建——以益阳花鼓戏的虚实融合应用为例 [Building an AIGC design paradigm for traditional opera costume: the case of Yiyang Huagu opera]. *轻纺工业与技术 [Light and Textile Industry and Technology]*, 54(4). [pages from CNKI]
+- 孙雨蓝, 迟诚, & 刘换洁 (2024). 基于AIGC技术的土家织锦纹样创新设计研究 [Innovative design of Tujia brocade patterns based on AIGC]. *东华大学学报(社会科学版) [Journal of Donghua University (Social Sciences)]*, 24(4), 93–103.
+- 易慎 (2025). 传统戏曲服饰AIGC智能设计范式的构建——以益阳花鼓戏的虚实融合应用为例 [Building an AIGC design paradigm for traditional opera costume: the case of Yiyang Huagu opera]. *轻纺工业与技术 [Light and Textile Industry and Technology]*, 54(4), 119–122.
 
 ---
 
