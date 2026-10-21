@@ -74,3 +74,4 @@ The coders disagreed on 132 cells across 78 images. Nine were settled by explici
 | Excluding D1 | 0.084 | 0.151 | 0.051 |
 | Coder A only (before adjudication) | 0.063 | 0.100 | 0.040 |
 | Coder B only | 0.041 | 0.180 | 0.055 |
+| Plumes on Guan Yu's helmet counted as compliant (S16-1 to S16-3, D4 = 0) | 0.070 | 0.118 | 0.041 |
