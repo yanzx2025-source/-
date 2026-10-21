@@ -1,5 +1,7 @@
-# AI 使用声明（定稿草案，2026-10-22）
+# AI 使用声明（2026-10-22 更新）
 
-> During the preparation of this work, I used Claude (Anthropic) to assist with literature searching, translating my Chinese draft into English, language editing and writing the analysis code; Claude also served as the second coder described in Section 3.5. During coding, I used Tencent WorkBuddy to look up reference material and costume terminology; all coding decisions were my own. The images analysed in this study were generated with Doubao, Meta AI and Hunyuan Image Alpha (via Tencent WorkBuddy), as described in Section 3.4. I reviewed and edited all outputs and take full responsibility for the content of the publication.
+> **Declaration of generative AI use.** I used Tencent WorkBuddy for literature searching, checking bibliographic details, and organising and editing my Chinese draft; during coding, I also used it to look up reference material and costume terminology, and all coding decisions were my own. I used Claude (Anthropic) for literature searching, translating my Chinese draft into English, language editing and writing the analysis code; Claude also served as the second coder described in Section 2.5. The images analysed in this study were generated with Doubao, Meta AI and Hunyuan Image Alpha (via Tencent WorkBuddy), as described in Section 2.4. I reviewed all outputs and take full responsibility for the content of this article.
 
-放在 Methods 末尾或 Acknowledgements，以 JTI 投稿指南的要求为准。
+**放置位置**：JTI 的投稿清单中，这一项排在 Disclosure statement 之后、Data availability statement 之前，按这个顺序放在正文后面的声明部分。
+
+**维护规则**：每多用一个 AI 工具，或者某个工具多了一项用途，都要在这里补上。
