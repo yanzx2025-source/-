@@ -131,7 +131,7 @@ Blinding was not complete, because two kinds of cue revealed the channel:
 
 The 48 Doubao images show no such traces. About two thirds of the 144 images could therefore be attributed to a channel at the time of coding. Comparisons between channels are not strictly blind and may have been influenced by this, as noted in the limitations.
 
-Coder A is the author, who trained in fashion design at associate-degree level and is a master's student in the art and design track of the Department of Performing Arts and Culture at the Catholic University of Korea. Coder B was Claude, a large language model. It coded all 144 images independently with the same codebook and had no access to coder A's results.
+Coder A is the author, who trained in fashion design at associate-degree level and is a master's student in the art and design track of the Department of Performing Arts and Culture at the Catholic University of Korea. While coding, coder A used Tencent WorkBuddy, an AI assistant, only to look up reference material and check costume terminology. Every code (0, 1 or 9) was decided by coder A. Coder B was Claude, a large language model. It coded all 144 images independently with the same codebook and had no access to coder A's results.
 
 Each disagreement was checked against the sources. Nine were settled by an explicit rule in the codebook; for example, imperial yellow on a role whose colour is not scored is coded D2 = 1. All other disagreements were settled by the author's judgement. The reason for every decision is recorded in the adjudication log (Appendix D).
 

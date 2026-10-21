@@ -1,6 +1,6 @@
 # 5 Discussion
 
-Translated from the author's Chinese draft (`discussion_5_zh_v0.md`). Four small corrections of fact were made in translation; they are listed in the review notes. One point in 5.6 is marked [Check] and needs the author's answer before submission.
+Translated from the author's Chinese draft (`discussion_5_zh_v0.md`). Four small corrections of fact were made in translation; they are listed in the review notes. 
 
 I compared the costume outputs of three generation channels, under two prompt strategies, for eight Peking opera roles. Three results are the starting point for this discussion.
 
@@ -77,7 +77,7 @@ This is consistent with the reason, given in the Method, for listing untested Ch
 
 **Second, comparisons between channels were not strictly blind.** The 48 Hunyuan images carry an "AI生成" watermark, and the 48 Muse images have grey side bands left by padding portrait originals. About two thirds of the 144 images could therefore be attributed to a channel during coding, which may have influenced the judgements.
 
-**Third, the second coder was a large language model rather than a human expert.** Its codes can serve as a reference for agreement, but they are not equivalent to review by a peer. Coder A's initial codes were also made with AI assistance. Although every code was checked individually, they may still carry a systematic bias. [Check: see review note 1.]
+**Third, the second coder was a large language model rather than a human expert.** Its codes can serve as a reference for agreement, but they are not equivalent to review by a peer. Coder A used an AI assistant to look up references and terminology during coding. All codes were coder A's own decisions, but the information retrieved in this way may still have shaped some judgements.
 
 **Fourth, the scope of roles and images is limited.** The eight roles cover only some role types, and each role has only three images per condition. Inferences about individual roles are therefore limited and should not be extended to all Peking opera role types.
 
