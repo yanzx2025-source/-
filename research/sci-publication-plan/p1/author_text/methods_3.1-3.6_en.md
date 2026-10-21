@@ -1,6 +1,6 @@
-# 3 Method (3.1–3.4)
+# 3 Method
 
-Translated from the author's Chinese draft (2026-10-21). Corrections from the review are applied, and every one is listed in the review notes. The first paragraph of 3.3 waits for the author's revised rationale.
+Translated from the author's Chinese draft (methods_3.1-3.6_zh.md, 2026-10-21). Items marked [Check] need the author's decision.
 
 ## 3.1 Design
 
@@ -16,6 +16,8 @@ The image was the basic unit of analysis. Each image was coded on six dimensions
 
 - 71 in the colour dimension, which was not scored for four of the roles;
 - 2 where accessories were hidden.
+
+One further colour cell belonged to a role whose colour was not scored, but it was coded as a violation because imperial yellow appeared.
 
 After excluding the NA cells, 791 items entered the analysis.
 
@@ -50,7 +52,13 @@ Colour was scored only for Guan Yu, Bao Zheng, Zhao Yun and Su San. For these fo
 
 ## 3.3 Prompts
 
-[Paragraph 1, the reason for using English: awaiting the author's revision.]
+All prompts were written in English, for three reasons:
+
+1. One of the three channels is a Meta product. Giving all three channels identical text meant using a single language, and English was the one language all three supported.
+2. English prompts match the terms used in this English-language article word for word. Reviewers can therefore check the prompts against the coding criteria without going through a translation.
+3. Practical constraints meant I did not test Chinese prompts.
+
+The choice has a cost. Some of the errors in the results were caused by literal English renderings: *xuezi* became "pleated robe", and *yu jia* became "fish-shaped cangue". Not testing Chinese prompts is therefore listed among the limitations. This language choice was made at the outset; it was not the result of a pilot comparison.
 
 Every prompt has a fixed frame of four parts:
 
@@ -92,4 +100,46 @@ When a request failed, it was resubmitted with the original prompt and the failu
 **Image preparation.** Before coding, the images were processed in two ways.
 
 1. The three channels returned images of very different sizes: 1024 × 1024 from WorkBuddy, 2048 × 2048 from Doubao, and a long side of 1920 to 2480 pixels from Muse. All images were resized to 768 pixels on the long side so that the three groups showed the same level of visible detail.
-2. All Muse outputs were portrait images: 38 at 1120 × 2240, 9 at 1280 × 1920 and 1 at 992 × 2480. They were padded left and right with the background grey to a 1:1 ratio, without cropping. Cropping would have cut off the headwear or the feet, and both headwear and footwear were coded. [Check: the codebook does not code footwear; see review note 4.]
+2. All Muse outputs were portrait images: 38 at 1120 × 2240, 9 at 1280 × 1920 and 1 at 992 × 2480. They were padded left and right with the background grey to a 1:1 ratio, without cropping. Cropping would have cut off the headwear or the feet, and both headwear and the overall form of the costume were coded.
+
+## 3.5 Coding
+
+Each image was coded on six dimensions:
+
+- **D1, garment type:** the class of the main garment.
+- **D2, colour rule:** whether the main colour matches the character's status.
+- **D3, motif:** whether the type of motif suits the garment.
+- **D4, headwear:** the type of helmet or headdress, and whether one is present.
+- **D5, accessories and role markers:** whether markers such as back flags, water sleeves, beards and the cangue are present, and whether extra ones are added.
+- **D6, cross-cultural substitution:** whether elements of Japanese, Korean, Qing court, modern hanfu or Western stage dress appear.
+
+Each dimension was coded 0 (compliant), 1 (violation) or 9 (not visible, or not applicable to the role).
+
+The criteria were taken from Han's (2019a, 2019b) accounts of the form and motifs of the python robe, *pei*, armour and *xuezi*, and from Cui et al.'s (2020) discussion of the ranking of colours in Peking opera costume. [Check: see review note 3.]
+
+To avoid recording "drawn badly" as "dressed wrongly", I applied one rule throughout. D1 was coded as a violation only when the class of the main garment was wrong. Differences in detail, such as stitch type, density of decoration, sleeve width or fabric texture, were not counted as violations. Motif was likewise judged by type only, for example a python robe without dragons or the presence of a Japanese family crest, and not by the fineness of the work.
+
+Blind coding was organised in 48 contact sheets. Each sheet showed the three images generated for one cell, meaning one channel, one strategy and one role. The sheet was labelled only with the role and a sheet number, without channel, strategy or generation time, and the order of the sheets was shuffled. Sheet numbers corresponded one to one with the 144 rows of the coding table.
+
+Blinding was not complete. Every Hunyuan Image Alpha image carries the platform watermark "AI生成 WORKBUDDY", so the channel of these 48 images could be recognised during coding. In addition, one Hunyuan image carries a third-party stock-photo watermark. I report this openly.
+
+Coder A is the author. [Check: see review note 2 on how to describe the author's background.] Coder B was Claude, a large language model. It coded all 144 images independently with the same codebook and had no access to coder A's results; coder A likewise coded without seeing coder B's results.
+
+Each disagreement was checked against the sources. Nine were settled by an explicit rule in the codebook; for example, imperial yellow on a role whose colour is not scored is coded D2 = 1. All other disagreements were settled by the author's judgement. The reason for every decision is recorded in the adjudication log (Appendix D).
+
+## 3.6 Analysis
+
+The unit of observation was the image–dimension pair. I fitted a binomial logistic regression by generalised estimating equations (GEE), clustered on image to account for the correlation between the six dimensions of the same image, with an exchangeable working correlation structure.
+
+The predictors were generation channel, prompt strategy, coding dimension and role, with role entered as a blocking factor. I also tested the channel × strategy interaction. Results are reported as odds ratios (OR) of a violation with 95% confidence intervals.
+
+Six sensitivity analyses were run:
+
+1. excluding the image with the third-party watermark;
+2. counting NA cells as compliant, rather than excluding them from the denominator;
+3. excluding D3;
+4. excluding D1, because garment type and motif are partly linked;
+5. using only coder A's codes before adjudication;
+6. using only coder B's codes.
+
+Agreement between coders was reported as Cohen's κ for each dimension, with NA treated as a separate category.

@@ -1,0 +1,7 @@
+main (consensus)                       n=791  {'C(strategy)[T.P2]': '0.066 (0.038-0.116)', 'C(model)[T.doubao]': '0.128 (0.082-0.201)', 'C(model)[T.muse]': '0.040 (0.021-0.077)'}
+excluding watermark image S34-2        n=785  {'C(strategy)[T.P2]': '0.066 (0.038-0.116)', 'C(model)[T.doubao]': '0.127 (0.081-0.201)', 'C(model)[T.muse]': '0.040 (0.020-0.077)'}
+NA counted as compliant                n=864  {'C(strategy)[T.P2]': '0.073 (0.043-0.124)', 'C(model)[T.doubao]': '0.138 (0.090-0.211)', 'C(model)[T.muse]': '0.044 (0.024-0.084)'}
+excluding D3 (motif)                   n=647  {'C(strategy)[T.P2]': '0.057 (0.030-0.109)', 'C(model)[T.doubao]': '0.130 (0.075-0.224)', 'C(model)[T.muse]': '0.043 (0.021-0.090)'}
+excluding D1 (garment type)            n=647  {'C(strategy)[T.P2]': '0.084 (0.050-0.142)', 'C(model)[T.doubao]': '0.151 (0.096-0.237)', 'C(model)[T.muse]': '0.051 (0.027-0.097)'}
+coder A only (before adjudication)     n=790  {'C(strategy)[T.P2]': '0.063 (0.034-0.116)', 'C(model)[T.doubao]': '0.100 (0.059-0.169)', 'C(model)[T.muse]': '0.040 (0.020-0.079)'}
+coder B only                           n=799  {'C(strategy)[T.P2]': '0.041 (0.022-0.077)', 'C(model)[T.doubao]': '0.180 (0.095-0.342)', 'C(model)[T.muse]': '0.055 (0.029-0.104)'}
