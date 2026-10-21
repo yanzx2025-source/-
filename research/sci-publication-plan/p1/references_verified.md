@@ -48,7 +48,7 @@
 
 ## 摘要级内容（可用于行文，不可用于页码）
 
-以下四条只取到摘要或题录，**没有拿到全文 PDF**。正文凡引用其内容，均限于摘要中可核对的原话，不涉页码。
+以下五条只取到摘要或题录，**没有拿到全文 PDF**。正文凡引用其内容，均限于摘要中可核对的原话，不涉页码。
 
 **韩波 2019c《靠》**（中国京剧 2019(8):52–57）
 摘要原话要点：将帅"身披靠甲，背扎靠旗，头戴翎羽，足蹬厚底"；传统京剧舞台布景、灯光简省，故"运用靠服、道具塑造出不同身份、性格各异的将帅形象"。
@@ -67,6 +67,26 @@
 摘要原话要点：衣箱制的建立"经历了一个相当漫长的过程"，称谓由"做杂剧的衣服""行头""戏衣"到"穿关"，再到"串头""穿戴题纲"，直至今日"戏曲衣箱"；明代宫廷剧场演出中的"穿关"因地位特殊而受关注。
 → 可用于：§2.1 衣箱制的形成与称谓演变（正文已按此写）。
 → 同作者另有《"穿关"三论》（戏剧艺术 2021(3):66–77+162–163），讨论"穿关"名目与杂剧文本、舞台表演的关系，与本研究关系较远，未引。
+
+**Zhang 等 2026b（CEDA-Opera，AIITA 2026, pp. 69–77, DOI 10.1109/AIITA69518.2026.11567226）**
+
+著录：Aili Zhang, Zhitao Hao, Hongchen Liu, Peilin Shi, Heng Xu。会期 2026-04-10/12，重庆。摘要取自 Semantic Scholar 的 DOI 记录（Crossref 未存摘要，IEEE 页面无法直接抓取）。
+
+摘要原文（逐字，未改其语法）：
+
+> As a pivotal form of Intangible Cultural Heritage (ICH), Peking Opera is characterized by unique cultural contexts and rigorous regulatory requirements governing both its programmatic actions and costume standards. When applied to this specific cultural domain, current general AIGC video models struggle to comprehend the inherent cultural semantics, thereby facing significant challenges related to the “Semantic Gap” and “Regulation Distortion.” Therefore, this paper take Peking Opera as our research subject and propose CEDA-Opera—a Peking Opera animation generation system based on the Cognitive-Execution Decoupling Architecture (CEDA)—to address the aforementioned challenges. The framework comprises three core modules: a multimodal Peking Opera knowledge base, a Cognitive Brain, and an Execution Body. We constructed a multimodal knowledge base encompassing action skeletons, costume reference ontologies, and musical patterns, establishing a standardized semantic mapping. Building on this foundation, the system decouples the “Cognitive Brain,” responsible for reasoning, from the “Execution Body,” responsible for generation. Leveraging Large Language Models (LLMs) combined with Retrieval-Augmented Generation (RAG) and context injection techniques, the Cognitive Brain parses vague user intents into precise structured parameters, enabling the accurate retrieval of assets from the knowledge base. Meanwhile, the Execution Body integrates an IP-Adapter for visual regulation, ControlNet for spatial guidance, and multiple generative models including Stable Diffusion and AnimateDiff, synthesizing animations through a dual-constraint path. Experimental results demonstrate that, compared to baseline models, CEDA-Opera excels in the standardization of programmatic actions, fidelity of costume regulations, and audio-visual synchronization, securing a significantly higher user preference rate. This study validates the feasibility of employing RAG and dual-constraint generation to restore Peking Opera programmatic regulations; furthermore, the proposed architecture separating “logical reasoning” from “physical assets” provides a cost-effective and transferable technical paradigm for the preservation of Intangible Cultural Heritage (ICH).
+
+**可用于本研究的三点**（均有原话对应）：
+
+1. 问题诊断：摘要自述通用 AIGC 视频模型面对两个问题——"Semantic Gap" 与 "Regulation Distortion"。**这证明"规制失真"在技术侧已被识别为问题**，不是我们提出的新概念；我们的贡献只在于给出量化判定，而不在于发现问题。
+2. 规制被写进系统内部：知识库含 "costume reference ontologies"，执行端用 "dual-constraint path"（IP-Adapter 视觉约束 + ControlNet 空间约束）。**这正好对应 §2.3 第三点**——规制写进系统后，无法区分"模型本来就知道"与"提示词告诉了它"，因此提示策略的作用需要另设对照才能分离。
+3. 评价依据：结果段只列 "standardization of programmatic actions, fidelity of costume regulations, and audio-visual synchronization"，落点是 "significantly higher user preference rate"。**"fidelity of costume regulations" 不是逐项判定，而是偏好率的比较对象**。§2.2 与 §2.3 第一处缺口即按此写。
+
+**不可写**：
+
+- 不可写"作者逐项判定服装规制"——摘要只说 fidelity，未说明如何测量。
+- 不可写"研究对象是静态图像"——本篇是**动画**生成（AnimateDiff），与我们测的静帧不是同一任务，行文需区分。
+- 摘要第三句 "this paper take Peking Opera as our research subject" 有语法错误，逐字引用时不要替作者改；本研究的正文只转述内容，不直接引这句。
 
 **Ren 等 2026**（JOCCH, DOI 10.1145/3842671）
 摘要要点：重建 30 件清代宫廷戏衣；FLUX + LoRA 做纹样探索；单目摄像头无标记动作估计驱动，Unity 内实现轻量混合布料动力学；对照实验 N=22，比较交互系统与静态三维展示，结果为"感知到的服装特征还原度相当"，可用性与沉浸感显著更高（p = 0.0067），文化传播价值显著更高（p = 0.0224）。
@@ -107,7 +127,7 @@
 
 | 中文 | 英文正文 | 参考文献表 |
 |---|---|---|
-| 韩波 | Han (2019a–2019d) | Han, B. |
+| 韩波 | Han (2019a–2019e) | Han, B. |
 | 崔唯、强凯、王晓宇 | Cui et al. (2020) | Cui, W., Qiang, K., & Wang, X. |
 | 刘春、徐子方 | Liu and Xu (2021) | Liu, C., & Xu, Z. |
 | 谭元杰 | Tan (2008) | Tan, Y. |
