@@ -10,23 +10,23 @@ picks = [("S06-1", "(a) Compliant: Bao Zheng, black python robe, minister's hat,
          ("S30-1", "(e) 'Pleated robe': literal knife pleats for xuezi"),
          ("S39-1", "(f) 'Fish-shaped cangue': square board carved with a fish")]
 files = {r.img: r.file for r in key.itertuples()}
-font = ImageFont.truetype("DejaVuSans.ttf", 22)
+font = ImageFont.truetype("DejaVuSans.ttf", 24)
 tiles = []
 for img, cap in picks:
     f = next(IMG.rglob(files[img]))
-    im = Image.open(f).convert("RGB"); im.thumbnail((560, 560))
-    t = Image.new("RGB", (580, 640), "white"); t.paste(im, ((580 - im.width) // 2, 10))
+    im = Image.open(f).convert("RGB"); im.thumbnail((768, 768))
+    t = Image.new("RGB", (788, 860), "white"); t.paste(im, ((788 - im.width) // 2, 10))
     d = ImageDraw.Draw(t); m = next(r for r in key.itertuples() if r.img == img)
     name = {"deepseek": "Hunyuan", "doubao": "Doubao", "muse": "Meta AI"}[m.model]
     words, lines, line = (cap + f" [{name}, {m.strategy}]").split(), [], ""
     for w in words:
-        if d.textlength(line + " " + w, font=font) > 560: lines.append(line); line = w
+        if d.textlength(line + " " + w, font=font) > 760: lines.append(line); line = w
         else: line = (line + " " + w).strip()
     lines.append(line)
-    for i, l in enumerate(lines[:3]): d.text((10, 575 + i * 24 - (len(lines) - 2) * 12), l, fill="#1f1f1e", font=font)
+    for i, l in enumerate(lines[:3]): d.text((10, 790 + i * 26 - (len(lines) - 2) * 13), l, fill="#1f1f1e", font=font)
     tiles.append(t)
-W, H = 3 * 580, 2 * 640
+W, H = 3 * 788, 2 * 860
 out = Image.new("RGB", (W, H), "white")
-for i, t in enumerate(tiles): out.paste(t, ((i % 3) * 580, (i // 3) * 640))
+for i, t in enumerate(tiles): out.paste(t, ((i % 3) * 788, (i // 3) * 860))
 out.save(f"{P}/figures/fig3_examples.png", dpi=(300, 300))
 print("ok")

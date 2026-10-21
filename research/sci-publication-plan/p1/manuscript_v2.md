@@ -1,4 +1,4 @@
-# Better torn than wrong: an audit of dress-code violations in AI-generated Peking opera costumes
+# Better torn than wrong: auditing generative AI images of Peking opera costume against the dress code
 
 [Author name], Department of Performing Arts and Culture, The Catholic University of Korea, [address, e-mail, ORCID]
 
@@ -14,7 +14,7 @@ Peking opera costume is governed by a prescriptive dress code that assigns garme
 
 Peking opera costume follows rules that the trade treats as binding. The saying "better to wear a torn costume than the wrong one" (宁穿破，不穿错) sums them up: a worn costume is acceptable, a costume that does not fit the role is not. The dress code encodes role type, status and situation in the form of the garment, its colour and motifs, the headwear and the accessories. Bao Zheng wears a black python robe, a minister's hat with horizontal wings and a white crescent on his forehead. Guan Yu wears a green python robe and a red face. Su San, on her way to trial as a prisoner, wears a red prisoner's jacket and skirt and a fish-shaped cangue. Each of these rules can be checked item by item, and the system as a whole has been documented in detail (Bonds, 2008).
 
-Generative image models have entered this field over the past few years. Opera posters, cultural merchandise and draft stage costumes now often start from a prompt, and technical studies have followed, from diffusion generation constrained by a knowledge graph (Zhang et al., 2026a) to an animation system designed around the problem of "regulation distortion" (Zhang et al., 2026b). These studies ask whether a system can produce convincing images, and they judge the results by informal feedback, visual fidelity or user preference.
+Generative image models have entered this field over the past few years. Opera posters, cultural merchandise and draft stage costumes now often start from a prompt, and technical studies have followed, from diffusion generation constrained by a knowledge graph (Zhang et al., 2026a) to an animation system designed around the problem of "regulation distortion" (Zhang et al., 2026b). These studies ask whether a system can produce convincing images, and they judge the results by informal feedback, visual fidelity or user preference. Costume and apparel designers already use the same tools in early design work (Jin et al., 2024), and knowing which garment, colour and accessory belong to which wearer is part of the professional knowledge those tools are meant to support.
 
 An image can be recognisable at a glance as a Peking opera figure and still put a python robe on the wrong character, leave Su San without her cangue or paint Bao Zheng's face on the back of his head. A layperson will rarely notice such errors; an expert notices them at once. Since most people who now use these tools are laypeople, the question of whether generative models belong in this workflow calls for a rule-by-rule check against the dress code.
 
@@ -32,7 +32,7 @@ Two properties of the code matter for any test of it. The rules attach to indivi
 
 Digital work on opera costume has followed three routes. One is generation under semantic constraints. Zhang et al. (2026a) combine a knowledge graph with a controllable diffusion model, constructing prompts from graph retrieval and checking consistency after generation; they report that no formal user study has yet been carried out. Zhang et al. (2026b) apply a similar idea to animation, using a multimodal knowledge base and dual-constraint generation to improve the fidelity of costume regulations, and evaluate the system by user preference. A second route is style transfer, which moves motifs from opera costume onto everyday garments (Guo & Liu, 2026). The third is three-dimensional reconstruction of existing costumes for display, teaching and virtual performance (Liu, K. et al., 2022; Su, 2025). Ren et al. (2026), for example, reconstructed 30 Qing court opera costumes, animated them with single-camera motion capture and explored motifs with a diffusion model; their experiment measured perceived reproduction of costume features, usability, immersion and the value of cultural communication.
 
-Studies of the design process have asked a different question. Rizzi and Bertola (2025) observed how master's students divided design work with generative tools, Jin et al. (2024) described how designers use such tools for early concept development, and Wu and Li (2025) interviewed ten practitioners about generative AI in textile design. These studies are concerned with whether the tools are usable and useful. Whether their output conforms to the conventions of the trade has not been their subject.
+Studies of the design process have asked a different question. Rizzi and Bertola (2025) observed how master's students divided design work with generative tools, Jin et al. (2024) described how designers use such tools for early concept development, and Wu and Li (2025) interviewed ten practitioners about generative AI in textile design. These studies are concerned with whether the tools are usable and useful. Whether their output conforms to the conventions of the trade has not been their subject. Audits of text-to-image systems, for their part, have treated cultural accuracy as a question of representation: whether outputs amplify stereotypes (Bianchi et al., 2023), how well they reflect the places named in a prompt (Basu et al., 2023), and how the text encoder shapes a model's cultural point of view (Ventura et al., 2025). A codified dress system allows a stricter test, because the correct answer is written down before any image is generated.
 
 ### 1.3 Research gap
 
@@ -173,7 +173,7 @@ The models seem to have learned what Peking opera costume looks like without lea
 
 Writing garment, colour, motif, headwear, accessories and face into the prompt cut the odds of a violation by more than an order of magnitude in every channel. The information that made this possible came from published sources, stage practice and the designer's own training. The model contributed none of it.
 
-This bears on the claim that generative AI "democratises" design. It makes drawing cheap, but knowing what is correct costs as much as before, and that knowledge now carries more of the weight. It also means the prompt cannot replace review: two thirds of Hunyuan Image Alpha's P2 images still contained an error.
+This bears on the claim that generative AI "democratises" design. It makes drawing cheap, but knowing what is correct costs as much as before, and that knowledge now carries more of the weight. It also means the prompt cannot replace review: two thirds of Hunyuan Image Alpha's P2 images still contained an error. One might object that P2 simply hands the model the answers. That is what the comparison was designed to test, and the answer is mixed. Models followed stated rules on colour almost perfectly but kept failing on the headwear and small markers that had failed under P1, which suggests that some rules are hard for these systems to carry out even when they are written down. Both translation errors (Section 3.5) also occurred under P2, so the estimated benefit of stating the code is, if anything, conservative.
 
 ### 4.3 Small markers carry the most meaning
 
@@ -181,7 +181,7 @@ The smallest items in a costume do most of the work of identification: the cresc
 
 ### 4.4 Translation as a source of error
 
-The pleated *xuezi* and the carved board show what happens when a compound term is translated word by word. "Pleated" keeps the literal sense of 褶 and loses the garment it names; "fish-shaped" keeps the fish and loses the outline of the cangue. Han (2019d) describes the *xuezi* as the most common everyday garment on the Peking opera stage, and a model given a literal gloss turns it into the most generic one. For designers who write prompts in a second language, the more specialised the term, the greater this risk. Whether Chinese prompts avoid it is a question for further work.
+The pleated *xuezi* and the carved board show what happens when a compound term is translated word by word. "Pleated" keeps the literal sense of 褶 and loses the garment it names; "fish-shaped" keeps the fish and loses the outline of the cangue. Han (2019d) describes the *xuezi* as the most common everyday garment on the Peking opera stage, and a model given a literal gloss turns it into the most generic one. For designers who write prompts in a second language, the more specialised the term, the greater this risk. This fits the argument of Ventura et al. (2025) that the text encoder shapes a model's cultural reading. Whether Chinese prompts avoid the problem is a question for further work.
 
 ### 4.5 Practical implications
 
@@ -199,7 +199,7 @@ Asked for a named Peking opera role, three widely used image generators broke th
 
 ## Declarations
 
-**Declaration of generative AI use.** I used Tencent WorkBuddy for literature searching and checking bibliographic details, and, during coding, to look up reference material and costume terminology; all coding decisions were my own. I used Claude (Anthropic) for literature searching, translating my Chinese draft into English, language editing and writing the analysis code; Claude also served as the second coder described in Section 2.5. The images analysed were generated with Doubao, Meta AI and Hunyuan Image Alpha (via Tencent WorkBuddy), as described in Section 2.4. I reviewed all outputs and take full responsibility for the content of this article.
+**Declaration of generative AI use.** I used Tencent WorkBuddy for literature searching and checking bibliographic details, and, during coding, to look up reference material and costume terminology; all coding decisions were my own. I used Claude (Anthropic) for literature searching, translating my Chinese draft into English, language editing, drafting a small number of sentences added in revision, and writing the analysis code; Claude also served as the second coder described in Section 2.5. The images analysed were generated with Doubao, Meta AI and Hunyuan Image Alpha (via Tencent WorkBuddy), as described in Section 2.4. I reviewed all outputs and take full responsibility for the content of this article.
 
 **Disclosure statement.** The author reports there are no competing interests to declare.
 
@@ -210,6 +210,10 @@ Asked for a named Peking opera role, three widely used image generators broke th
 ---
 
 ## References
+
+Basu, A., Babu, R. V., & Pruthi, D. (2023). Inspecting the geographical representativeness of images from text-to-image models. In *Proceedings of the IEEE/CVF International Conference on Computer Vision* (pp. 5136–5147). https://doi.org/10.1109/ICCV51070.2023.00474
+
+Bianchi, F., Kalluri, P., Durmus, E., Ladhak, F., Cheng, M., Nozza, D., Hashimoto, T., Jurafsky, D., Zou, J., & Caliskan, A. (2023). Easily accessible text-to-image generation amplifies demographic stereotypes at large scale. In *Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency* (pp. 1493–1504). https://doi.org/10.1145/3593013.3594095
 
 Bonds, A. B. (2008). *Beijing opera costumes: The visual communication of character and culture*. University of Hawai'i Press.
 
@@ -246,6 +250,8 @@ Rizzi, G., & Bertola, P. (2025). Exploring the generative AI potential in the fa
 Su, Z. (2025). Immersive teaching model for traditional Chinese opera costume design based on virtual reality: Digital cultural heritage, inheritance, and innovation. *Scientific Reports, 15*, 34830. https://doi.org/10.1038/s41598-025-19350-7
 
 Tan, Y. (2008). *Zhongguo jingju fuzhuang tupu* [Illustrated catalogue of Chinese Peking opera costumes]. Beijing Arts and Crafts Publishing House.
+
+Ventura, M., Ben-David, E., Korhonen, A., & Reichart, R. (2025). Navigating cultural chasms: Exploring and unlocking the cultural POV of text-to-image models. *Transactions of the Association for Computational Linguistics, 13*, 142–166. https://doi.org/10.1162/tacl_a_00732
 
 Wu, X., & Li, L. (2025). Qualitative-empirical insights into generative AI for textile design in the fashion design process. *International Journal of Design Creativity and Innovation, 13*(4), 322–357. https://doi.org/10.1080/21650349.2025.2529167
 
