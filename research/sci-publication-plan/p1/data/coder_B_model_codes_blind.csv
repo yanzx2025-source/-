@@ -1,0 +1,145 @@
+img,D1,D2,D3,D4,D5,D6,rec,note
+S01-1,1,1,1,1,1,0,1,blue floral skirt-jacket; full head ornaments; no cangue; extra figure in background
+S01-2,1,1,1,1,1,0,1,green-pink dress; fur cape; birdcage; stool; no cangue
+S01-3,1,1,1,1,1,1,1,green robe; Manchu liangbatou headdress (Qing)
+S02-1,1,9,1,1,1,0,1,python robe with dragon/sea-wave; xiangdiao hat; jade belt; full beard; no fan
+S02-2,1,9,1,1,1,0,1,same as S02-1 navy
+S02-3,1,9,1,1,1,0,1,same as S02-1 teal-navy
+S03-1,1,9,0,1,1,0,1,female dan costume with fur; floral crown; wrong gender/role
+S03-2,1,9,1,1,1,0,1,navy robe with dragons; soft winged hat; handsome makeup
+S03-3,1,1,0,1,1,1,1,yellow-black Qing-style robe; Qing official hat; green face; bright yellow for commoner
+S04-1,0,9,0,0,1,0,1,floral xuezi; fangjin; handsome makeup no tofu patch
+S04-2,1,9,0,0,1,0,1,short white jacket over pleated skirt; full white face mask + moustache
+S04-3,1,9,1,0,1,0,1,teal robe with dragon; belt; holds spear and umbrella; tofu patch present
+S05-1,0,9,0,0,0,0,1,gold-brown phoenix robe; cloud collar; belt; phoenix crown with odd side wings
+S05-2,0,9,0,0,0,0,1,red phoenix nü mang; cloud collar; jade belt; train
+S05-3,0,9,0,0,0,0,1,teal phoenix nü mang; cloud collar; belt
+S06-1,0,0,0,0,0,0,1,black python robe; xiangdiao; jade belt; black face crescent
+S06-2,0,0,0,0,0,0,1,same
+S06-3,0,0,0,0,0,0,1,same
+S07-1,1,0,0,1,1,0,1,black dragon coat with trousers; non-standard jeweled hat; no jade belt; forehead not crescent
+S07-2,0,0,0,0,1,0,1,black dragon robe; cloth sash with jade disc; forehead swirl not crescent
+S07-3,0,0,0,0,1,0,1,black silver-dragon robe; forehead mark not a crescent
+S08-1,0,0,0,0,0,0,1,white kao with flags; helmet; spear
+S08-2,0,0,0,0,0,0,1,same
+S08-3,0,0,0,0,0,0,1,same
+S09-1,1,1,1,1,1,0,1,light-blue embroidered pei/xuezi; white skirt; full head ornaments; no cangue
+S09-2,1,1,1,1,1,0,1,same
+S09-3,1,1,1,1,1,0,1,same
+S10-1,0,0,0,0,1,0,1,black dragon robe; forehead swirl not crescent; body rendered from behind with face (anatomy artifact)
+S10-2,1,0,0,1,1,0,1,black-gold armour; crown-like hat not xiangdiao; no jade belt
+S10-3,0,0,0,0,1,0,1,rear view; beard on back (anatomy artifact); forehead swirl not crescent
+S11-1,0,9,0,0,1,0,1,nü kao; lingzi; no back flags
+S11-2,0,9,0,1,0,0,1,nü kao with flags; short peacock feathers not lingzi; holds guandao
+S11-3,0,9,0,1,1,0,1,nü kao; no lingzi; no flags; holds sword
+S12-1,1,9,1,1,1,0,1,black python robe with dragon; xiangdiao; beard; official not clown
+S12-2,1,9,1,1,1,0,1,black python robe sea-wave hem; ornate winged helmet; beard
+S12-3,1,9,1,1,1,0,1,same as S12-1
+S13-1,0,9,0,0,0,0,1,nü kao; four flags; lingzi
+S13-2,0,9,0,0,0,0,1,same
+S13-3,0,9,0,0,0,0,1,same
+S14-1,0,9,0,0,1,0,1,nü kao; lingzi; no back flags
+S14-2,0,9,0,0,0,0,1,nü kao; flags; lingzi
+S14-3,0,9,0,0,0,0,1,same
+S15-1,0,9,0,0,0,0,1,nü kao; flags; lingzi
+S15-2,1,9,0,1,0,0,1,red skirt dress with sash not kao; flags; short peacock feathers
+S15-3,1,9,0,1,1,0,1,blue robe with cape not kao; banners hung on frame; short feathers
+S16-1,0,0,0,1,0,0,1,green dragon mang; red face; beard; helmet carries pheasant feathers (fuzi kui has none)
+S16-2,0,0,0,1,0,0,1,same
+S16-3,0,0,0,1,0,0,1,same
+S17-1,1,9,1,1,1,1,1,pastel layered hanfu-style dress with pibo; floral not phoenix; toumian not phoenix crown; sash not jade belt
+S17-2,1,9,1,1,1,1,1,same
+S17-3,1,9,1,1,1,1,1,same
+S18-1,1,0,0,1,1,0,1,green dragon short robe with armour shoulders; feathered crown not fuzi kui; gold belt
+S18-2,0,0,0,1,0,0,1,green dragon robe; jade-plaque belt; gold helmet with feathers
+S18-3,1,0,0,1,1,0,1,robe with armour shoulders; black hat with tall feathers; cloth belt
+S19-1,0,0,0,0,0,0,1,red phoenix nü mang; cloud collar; jade belt; phoenix crown
+S19-2,0,0,0,0,0,0,1,yellow phoenix nü mang (yellow permitted for imperial consort)
+S19-3,0,0,0,0,0,0,1,red phoenix nü mang
+S20-1,0,0,0,0,0,0,1,green dragon mang; jade belt; helmet with pompoms
+S20-2,0,0,0,0,0,0,1,green kao-like without flags (green kao acceptable); jade belt
+S20-3,0,0,0,0,0,0,1,green dragon mang; jade belt; dragon helmet
+S21-1,1,0,1,1,1,0,1,black jacket and trousers; floral medallion; puffed hat; white face with black pattern
+S21-2,1,1,1,1,1,0,1,white shirt navy butterfly vest baggy trousers; topknot; white face
+S21-3,1,1,1,1,1,0,1,blue robe red skirt; handsome face; holds plaques with garbled text 包拯
+S22-1,1,1,1,1,1,0,1,red robe with cape; crown; beard
+S22-2,1,1,1,1,1,0,1,blue jacket; axe and spear; soft hat
+S22-3,1,1,1,1,1,0,1,female dancer red-blue dress; holds flag
+S23-1,0,9,0,1,1,0,1,navy bagua robe; turban not bagua jin; folding fan not feather fan
+S23-2,0,9,0,1,0,0,1,multicolour bagua robe; winged hat; feather fan
+S23-3,0,9,0,0,0,0,1,navy bagua robe; tall cap with bagua band; white feather fan
+S24-1,0,1,0,0,1,0,1,blue dragon kao (not white); no flags; guandao not spear
+S24-2,0,1,0,0,1,0,1,blue kao with flags; guandao not spear
+S24-3,0,1,0,0,1,0,1,blue kao; beard; no flags
+S25-1,0,9,0,0,0,0,1,nü kao; flags; lingzi
+S25-2,0,9,0,0,0,0,1,same
+S25-3,0,9,0,0,0,0,1,same
+S26-1,0,0,0,1,1,0,1,green dragon robe; horned helmet; white face with red pattern; no beard; cord belt
+S26-2,0,0,0,1,0,0,1,green dragon robe; jade belt; tall fan-crest hat not fuzi kui
+S26-3,0,0,0,1,0,0,1,green dragon robe; jade belt; winged hat not fuzi kui
+S27-1,0,0,1,0,1,0,1,red jacket with white embroidered trousers; head wrap; chain not fish cangue
+S27-2,1,1,1,1,1,0,1,light-blue embroidered robe; phoenix crown; no cangue
+S27-3,1,1,1,1,1,0,1,blue embroidered robe; head ornaments; no cangue
+S28-1,1,9,1,1,1,1,1,light-blue caped dress; Manchu liangbatou; floral; no jade belt
+S28-2,1,9,1,1,1,0,1,red-blue dress; toumian; floral; no cloud collar or jade belt
+S28-3,1,9,0,1,1,1,1,pink Qing-style robe; Manchu liangbatou; phoenix on chest
+S29-1,0,0,0,0,0,0,1,white kao; flags; helmet; spear
+S29-2,0,0,0,0,0,0,1,white-silver kao; flags; helmet; spear
+S29-3,1,0,1,1,1,0,1,white robe not kao; blue flags; soft hat; guandao not spear
+S30-1,1,9,0,1,0,1,1,jacket over literally pleated skirt (hanfu); winged gauze hat; tofu patch present
+S30-2,1,9,0,0,0,1,1,round-collar robe with literal knife pleats; square hat; tofu patch
+S30-3,1,9,0,1,0,1,1,literally pleated robe; mortarboard-like hat with tassels; tofu patch
+S31-1,0,9,0,0,0,0,1,green diagonal-collar xuezi; fangjin; tofu patch
+S31-2,0,9,1,0,0,0,1,black xuezi with python-robe sea-wave hem; tofu patch; beard
+S31-3,0,9,0,0,0,0,1,black xuezi; fangjin; tofu patch
+S32-1,0,9,0,0,0,0,1,navy robe with trigram blocks; cap; white feather fan; grey beard
+S32-2,0,9,0,0,0,0,1,navy robe with trigrams and cranes; cap; feather fan
+S32-3,0,9,0,1,0,0,1,robe with trigrams; cap with pheasant feathers; feather fan
+S33-1,1,9,1,1,1,1,1,red Qing-style robe; Manchu dalachi headdress; no flags
+S33-2,1,9,1,1,1,0,1,pink dress; holds two fans; toumian; no kao or flags
+S33-3,1,9,1,1,1,0,1,red dress with dragon medallion; winged hat; sword; no kao
+S34-1,1,1,0,1,1,0,1,red robe with fur collar; crown; red face; beard; no jade belt
+S34-2,1,1,1,1,1,0,1,red-black armour-like coat; halo crown; white face; no beard; stock-site watermark www.yanqin.net
+S34-3,0,1,0,1,1,0,1,red-yellow dragon robe; hat with crescent (Bao Zheng element); red face; no jade belt
+S35-1,1,9,0,1,0,1,1,frog-button changshan-style robe; cap; tofu patch; folding fan; satchel
+S35-2,0,9,0,1,1,0,1,crossed-collar robe; cap with tufts; large white face mask
+S35-3,1,9,0,0,0,1,1,red frog-button robe; square hat; tofu patch
+S36-1,0,0,0,0,0,0,1,black dragon mang; jade belt; xiangdiao; black face crescent
+S36-2,0,0,0,0,0,0,1,same
+S36-3,0,0,0,0,1,0,1,rear view with face on back (anatomy artifact); forehead swirl not crescent
+S37-1,0,0,0,0,0,0,1,white kao; flags; helmet; spear
+S37-2,0,0,0,0,0,0,1,same
+S37-3,0,0,0,0,0,0,1,same
+S38-1,0,0,0,0,0,0,1,blue phoenix nü mang; cloud collar; jade belt; phoenix crown
+S38-2,0,0,0,0,0,0,1,red phoenix nü mang
+S38-3,0,0,0,0,0,0,1,red phoenix nü mang
+S39-1,0,0,1,0,1,0,1,red jacket and skirt with floral skirt band; head wrap; rectangular board with carved fish instead of fish-shaped cangue
+S39-2,0,0,1,0,1,0,1,same
+S39-3,0,0,1,0,1,0,1,same
+S40-1,0,0,1,1,1,0,1,red floral jacket-skirt; decorated hat; small gold fish pendant not cangue
+S40-2,0,0,1,0,1,0,1,red jacket black trim; head wrap; holds fish-headed club not cangue
+S40-3,0,0,1,0,0,0,1,red floral jacket; head wrap; fish-shaped wooden cangue on chest
+S41-1,0,9,0,0,0,0,1,navy robe with trigrams; cap; feather fan; beard
+S41-2,0,9,0,0,0,0,1,same
+S41-3,0,9,0,0,0,0,1,same
+S42-1,0,0,0,0,1,0,1,black python mang; xiangdiao; plaque belt; face painted white-black-red not all-black with crescent
+S42-2,0,0,0,0,1,0,1,same
+S42-3,0,0,0,0,1,0,1,same
+S43-1,0,0,0,0,0,0,1,green dragon mang; jade belt; red face; beard; helmet with pompoms
+S43-2,0,0,0,0,0,0,1,same
+S43-3,0,0,0,1,0,0,1,same but helmet carries feathers
+S44-1,0,0,0,0,0,0,1,red jacket and skirt; head wrap; fish-shaped cangue labelled 蘇三; water sleeves
+S44-2,0,0,0,0,0,0,1,same; cangue shape distorted but fish-like
+S44-3,0,0,0,0,0,0,1,same
+S45-1,1,9,1,1,1,0,1,red dragon robe; round-winged gauze hat; holds cymbals; no fan
+S45-2,1,9,1,1,1,0,1,blue dragon mang; tall hat; no fan
+S45-3,1,9,1,1,1,0,1,white robe with shou-character panel; odd crown; no fan
+S46-1,0,0,0,0,1,0,1,white-blue kao with flags; helmet; sword not spear
+S46-2,0,0,0,0,1,0,1,white kao; two small pennants not kao flags; spear; no stage makeup
+S46-3,0,0,0,0,1,0,1,white kao; small pennants not kao flags; spear
+S47-1,0,9,1,1,0,0,1,trigram robe with python sea-wave hem; xiangdiao not bagua jin; feather fan
+S47-2,0,9,1,1,0,0,1,same brown
+S47-3,0,9,1,1,0,0,1,same red-gold
+S48-1,0,9,0,0,1,0,1,red phoenix robe; tasselled cloud collar; phoenix crown; sash panel not jade belt
+S48-2,0,9,0,0,1,0,1,same; knotted cord not jade belt
+S48-3,1,9,0,0,1,0,1,layered panelled skirt like nü kao not nü mang; no jade belt
