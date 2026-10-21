@@ -1,129 +1,144 @@
 # 4 Results
 
-Translated from the author's Chinese draft (`results_4.1-4.6_zh_v0.md`, 2026-10-22). Edits made in translation:
-
-- All figures replaced with the consensus-code values in `analysis/results_tables_consensus.md`.
-- Three interpretive passages moved, unchanged in substance, to the holding section at the end. They will go into the Discussion.
-- The conclusion drawn from D6 narrowed, and the count of sensitivity analyses corrected.
-- The description of the D5 disagreements corrected to match the adjudication log.
+Translated from the author's Chinese draft (`results_4.1-4.6_zh_v1.md`). Empty table cells were filled from `analysis/results_tables_consensus.md`. Corrections of fact are marked [Corrected] in the review notes.
 
 ## 4.1 Inter-coder agreement
 
-Before adjudication, the two coders agreed on 84.7% of cells, with κ = 0.70 (Table 2).
+Both coders coded the six dimensions of all 144 images, for a total of 864 coding cells. After excluding 73 cells that were not applicable or not visible, 791 coded items remained. Table 2 reports overall agreement and Cohen's κ for each dimension.
 
-- **Highest agreement:** colour (D2, κ = 0.92), where the rule leaves little room for interpretation.
-- **Lowest agreement:** markers and accessories (D5, κ = 0.45) and cross-cultural substitution (D6, κ = 0.24).
+Agreement was uneven across dimensions. Colour (D2) had the highest κ, which shows that the colour rule was the easiest judgement to reproduce between coders. Markers and accessories (D5) and cross-cultural substitution (D6) had the lowest.
 
-The D5 disagreements centred on three kinds of judgement: whether a belt counts as a jade belt; whether Bao Zheng's face shows the white crescent; and whether a weapon or a set of small pennants satisfies the requirement for a spear or for back flags. On all three, coder B applied the codebook more strictly than coder A.
+The D5 disagreements centred on three judgements:
 
-The low κ for D6 is partly a matter of base rate. Violations were rare, and κ is depressed when the base rate is low. The coders also drew the boundary of "close to modern hanfu" and "close to Japanese style" differently.
+- whether a belt counts as a jade belt;
+- whether Bao Zheng's forehead shows the white crescent;
+- whether a glaive or a set of small pennants satisfies the requirement for a spear or for back flags.
 
-The two coders disagreed on 132 cells across 78 images. Nine were settled by explicit codebook rules and the rest by coder A's judgement.
+None of these is a question of visibility. Each is a question of whether a substitute or an approximation counts. On all three, coder B applied the codebook more strictly than coder A.
 
-**Table 2.** Inter-coder agreement before adjudication.
+The low κ for D6 has two sources. First, D6 had the fewest violations in the sample, and a low base rate limits the attainable κ. Second, assigning an element to Qing court dress or to modern hanfu required case-by-case judgement, and the two coders set different thresholds for "close to hanfu".
 
-| Dimension | Agreement | Cohen's κ |
-|---|---|---|
-| D1 Garment type | 86.1% | 0.68 |
-| D2 Colour | 95.1% | 0.92 |
-| D3 Motif | 84.7% | 0.64 |
-| D4 Headwear | 83.3% | 0.66 |
-| D5 Markers and accessories | 71.5% | 0.45 |
-| D6 Cross-cultural substitution | 87.5% | 0.24 |
-| Overall | 84.7% | 0.70 |
+**Table 2.** Inter-coder agreement before adjudication. Confidence intervals were obtained by bootstrapping images, with 2,000 resamples.
 
-## 4.2 RQ1: Overall compliance
+| Dimension | Agreement | Cohen's κ | 95% CI |
+|---|---|---|---|
+| Overall | 84.7% | 0.70 | 0.64–0.76 |
+| D1 Garment type | 86.1% | 0.68 | 0.55–0.80 |
+| D2 Colour | 95.1% | 0.92 | 0.85–0.98 |
+| D3 Motif | 84.7% | 0.64 | 0.49–0.77 |
+| D4 Headwear | 83.3% | 0.66 | 0.53–0.78 |
+| D5 Markers and accessories | 71.5% | 0.45 | 0.32–0.58 |
+| D6 Cross-cultural substitution | 87.5% | 0.24 | −0.01–0.48 |
 
-Across all 144 images, only 56 (38.9%) complied with the dress code on every dimension. Under P1 the share was 14 of 72; under P2 it was 42 of 72.
+*Note.* D2 applies only to Guan Yu, Bao Zheng, Zhao Yun and Su San; the other roles were coded NA. Agreement was computed on all 144 images, with NA treated as a separate category.
 
-The channels differed widely under P1 (Table 3):
+## 4.2 RQ1: Overall compliance under P1
 
-- **Hunyuan Image Alpha** did worst. It violated the code on 75.9% of codable items, produced no fully compliant image, and averaged 4.21 violations per image.
-- **Meta AI** did best. Its P1 violation rate was 19.8%, nearly half of its images (45.8%) were fully compliant, and it averaged 1.08 violations per image.
-- **Doubao** fell in between: 37.1% of items in violation and 12.5% of images fully compliant.
+When the prompt named only the role and the play, without stating the dress code (P1), the three channels differed markedly (Table 3).
 
-**Table 3.** Violation rate, share of fully compliant images and mean violations per image, by channel and strategy.
+- **Hunyuan Image Alpha** violated the most rules. Its violation rate was 75.9%, and none of its 24 images was fully compliant.
+- **Meta AI (Muse)** violated the fewest. Its violation rate was 19.8%, and 11 of its 24 images were fully compliant.
+- **Doubao** fell in between, with a violation rate of 37.1% and 3 fully compliant images out of 24.
 
-| Channel | Violation rate P1 | Violation rate P2 | Fully compliant P1 | Fully compliant P2 | Mean violations P1 | Mean violations P2 |
-|---|---|---|---|---|---|---|
-| Hunyuan Image Alpha (WorkBuddy) | 75.9% | 26.0% | 0.0% | 33.3% | 4.21 | 1.42 |
-| Doubao | 37.1% | 7.6% | 12.5% | 58.3% | 2.04 | 0.42 |
-| Meta AI (Muse) | 19.8% | 3.0% | 45.8% | 83.3% | 1.08 | 0.17 |
+After controlling for prompt strategy, dimension and role, the odds of a violation relative to Hunyuan Image Alpha were 0.128 for Doubao and 0.040 for Muse.
+
+Of all 144 images, 56 (38.9%) complied on all six dimensions. The other 88 violated at least one rule.
+
+**Table 3.** Violations by channel under P1.
+
+| Channel | Images | ≥ 1 violation, n (%) | Fully compliant, n (%) | Coded items | Item-level violation rate |
+|---|---|---|---|---|---|
+| Hunyuan Image Alpha | 24 | 24 (100%) | 0 (0.0%) | 133 | 75.9% |
+| Doubao | 24 | 21 (87.5%) | 3 (12.5%) | 132 | 37.1% |
+| Muse | 24 | 13 (54.2%) | 11 (45.8%) | 131 | 19.8% |
+
+*Note.* Under P1, each channel produced 3 images for each of the 8 roles, giving 24 images per channel.
 
 ## 4.3 RQ2: Which dimensions and roles fail most
 
-**By dimension.** Headwear was among the dimensions most often violated. Under P1, its violation rate was 56.9%, against 47.2% for garment type and 57.7% for markers and accessories (Table 4). In the adjusted model, with garment type as the reference, the odds of a violation were higher for:
+Table 4 gives the violation rate and adjusted OR for each dimension.
 
-- headwear: OR = 2.67, 95% CI 1.51–4.70, p < .001;
-- markers and accessories: OR = 2.12, 95% CI 1.20–3.76, p = .010.
+- **Most violations:** headwear (40.3% of codable items).
+- **Next:** markers and accessories (37.3%), then garment type and motif (27.8% each).
+- **Fewest:** cross-cultural substitution (9.0%).
 
-Cross-cultural substitution was the least frequent error (P1: 13.9%; OR = 0.12, 95% CI 0.05–0.28, p < .001). When it did occur, it consisted mainly of Qing court headdresses and modern hanfu elements. Japanese, Korean and Western elements were rare.
+The low rate for cross-cultural substitution does not mean that the outputs stayed inside the Peking opera system. The violations on this dimension were Qing court headdresses, modern hanfu and Japanese-style elements, all of which lie outside the Peking opera dress code. They simply occurred less often than errors of garment type and headwear.
 
-**Table 4.** Violation rate by dimension.
+**Table 4.** Violation rate and adjusted OR by dimension.
 
-| Dimension | All | P1 | P2 | Codable cells |
-|---|---|---|---|---|
-| D1 Garment type | 27.8% | 47.2% | 8.3% | 144 |
-| D2 Colour | 27.4% | 54.1% | 0.0% | 73 |
-| D3 Motif | 27.8% | 41.7% | 13.9% | 144 |
-| D4 Headwear | 40.3% | 56.9% | 23.6% | 144 |
-| D5 Markers and accessories | 37.3% | 57.7% | 16.9% | 142 |
-| D6 Cross-cultural substitution | 9.0% | 13.9% | 4.2% | 144 |
+| Dimension | Violations / codable | Violation rate | Adjusted OR | 95% CI | p |
+|---|---|---|---|---|---|
+| D1 Garment type | 40/144 | 27.8% | 1 (reference) | — | — |
+| D2 Colour | 20/73 | 27.4% | 0.80 | 0.43–1.51 | .494 |
+| D3 Motif | 40/144 | 27.8% | 1.00 | 0.54–1.85 | > .999 |
+| D4 Headwear | 58/144 | 40.3% | 2.67 | 1.51–4.70 | < .001 |
+| D5 Markers and accessories | 53/142 | 37.3% | 2.12 | 1.20–3.76 | .010 |
+| D6 Cross-cultural substitution | 13/144 | 9.0% | 0.12 | 0.05–0.28 | < .001 |
 
-**By role.** The gap between roles was wide (Table 5). Jiang Gan and Su San were the most often wrong, with 67.4% and 70.4% of P1 items in violation. Yang Yuhuan was the least often wrong, at 22.2% under P1 and no violations under P2.
+*Note.* ORs come from a GEE binomial logistic regression with the image–dimension pair as the unit of observation, clustered on image. D1 is the reference level.
+
+The roles also differed markedly (Table 5). Three examples show what the errors looked like.
+
+1. **Zhuge Liang's bagua robe replaced by a python robe.** All three Doubao P1 images (S02) show a literati figure in a robe covered with round dragons, wearing an official's hat. None carries the trigram pattern.
+2. **Su San's fish cangue missing.** Su San appeared in elaborate women's dress rather than the prisoner's jacket and skirt. Examples are the green robe with a Qing headdress in S01-3 and the lake-blue *xuezi* in S09-1 to S09-3. When a substitute did appear, it was a chain or a carved board, and the cangue's form, size and manner of wearing were all wrong.
+3. **Jiang Gan's clown markers missing.** In some images the tofu-block patch became a large white mask over the face (S04-2), and the square cap was replaced by a tall hat or an official's hat (S03, S04-2).
 
 **Table 5.** Violation rate by role.
 
-| Role | All | P1 | P2 | Codable cells |
-|---|---|---|---|---|
-| R1 Zhuge Liang | 35.6% | 55.6% | 15.6% | 90 |
-| R2 Guan Yu | 23.1% | 31.5% | 14.8% | 108 |
-| R3 Yang Yuhuan | 11.1% | 22.2% | 0.0% | 90 |
-| R4 Mu Guiying | 16.7% | 26.7% | 6.7% | 90 |
-| R5 Bao Zheng | 21.7% | 35.8% | 7.5% | 106 |
-| R6 Zhao Yun | 28.7% | 44.4% | 13.0% | 108 |
-| R7 Su San | 43.5% | 70.4% | 16.7% | 108 |
-| R8 Jiang Gan | 45.1% | 67.4% | 22.2% | 91 |
+| ID | Role | Role type | P1 | P2 | All |
+|---|---|---|---|---|---|
+| R1 | Zhuge Liang | laosheng | 55.6% | 15.6% | 35.6% |
+| R2 | Guan Yu | hongsheng | 31.5% | 14.8% | 23.1% |
+| R3 | Yang Yuhuan | huashan | 22.2% | 0.0% | 11.1% |
+| R4 | Mu Guiying | daomadan | 26.7% | 6.7% | 16.7% |
+| R5 | Bao Zheng | tongchui hualian | 35.8% | 7.5% | 21.7% |
+| R6 | Zhao Yun | wusheng | 44.4% | 13.0% | 28.7% |
+| R7 | Su San | qingyi | 70.4% | 16.7% | 43.5% |
+| R8 | Jiang Gan | wenchou | 67.4% | 22.2% | 45.1% |
 
-**Typical errors.** Four errors were typical (sheet numbers in brackets).
+## 4.4 RQ3: The effect of stating the dress code
 
-1. **Zhuge Liang rendered as a generic chief minister** (S02-1 to S02-3, Doubao, P1). All three images show a python robe and an official's hat. The bagua robe, bagua scarf hat and feather fan are all missing.
-2. **Su San without the cangue.** In S01-3 (Hunyuan, P1) and S09-1 to S09-3 (Doubao, P1), the cangue never appears. The three S09 images are almost identical, each a lake-blue *xuezi*, which shows homogeneous output.
-3. **Jiang Gan without the clown face** (S03-1, S03-2, S04-2, Hunyuan, P1). None of the three shows the tofu-block patch. S04-2 comes closest, with white patches around the eyes, but its headwear is a tall flat-topped black hat and the figure wears a short jacket and trousers. It is even further from the *xuezi* and square cap.
-4. **Modern objects in the frame** (S01-2, Hunyuan, P1). Su San holds a birdcage, a pink plastic stool stands at her feet, and the corner of a wall is visible behind her. The instruction "plain light grey background" had no effect.
+Stating the dress code in the prompt (P2) significantly reduced the odds of a violation. Relative to P1, the adjusted OR for P2 was 0.066 (95% CI 0.038–0.116, p < .001), meaning the odds of a violation fell to 6.6% of their P1 level.
 
-## 4.4 RQ3: Does stating the dress code help?
+Differences between channels remained. Relative to Hunyuan Image Alpha, the main-effect OR was 0.128 for Doubao and 0.040 for Muse. The channel × strategy interaction was not significant (p = .18 and .26), so the effect of P2 had the same direction and a similar size in all three channels. The dress-code statement did not work for only one channel.
 
-Stating the dress code reduced the odds of a violation to about one fifteenth of the P1 level (OR = 0.066, 95% CI 0.038–0.116, p < .001).
+The dress-code statement did not eliminate violations. About two thirds of Hunyuan Image Alpha's P2 images still violated at least one rule. Stating garment and colour in the prompt lowers the frequency of errors, but it cannot replace human checking.
 
-The channels differed sharply. With Hunyuan Image Alpha as the reference:
+## 4.5 Errors caused by translating costume terms
 
-- Doubao: OR = 0.128 (95% CI 0.082–0.201, p < .001);
-- Meta AI: OR = 0.040 (95% CI 0.021–0.077, p < .001).
+Some errors can be traced to meaning lost when Chinese costume terms were rendered in English for the prompt.
 
-The channel × strategy interaction was not significant (Doubao p = .177; Meta AI p = .256). The relative effect of P2 was therefore similar across channels: P2 helped all three, and only the absolute size of the gain differed.
+**Xuezi.** Rendered as "pleated robe", *xuezi* was read by the model as a garment with physical pleats, and the output was a pleated scholar's gown. Jiang Gan's images show this most clearly: a plain gown with pleats, worn with a square black hat that looks more like an academic mortarboard than a scholar's square cap (S30, Meta AI, P2).
 
-P2 is not a cure-all. Two thirds of Hunyuan Image Alpha's P2 images still broke at least one rule (fully compliant: 33.3%). Writing the dress code into the prompt lowers the violation rate, but does not bring it to zero.
+**Yu jia.** Rendered as "fish-shaped cangue", *yu jia* was read by the model as a cangue decorated with a fish rather than one with the outline of a fish. The output was a square board with a fish carved on its surface, and its size and proportions did not match the form of the cangue (S39, Doubao, P2).
 
-## 4.5 Errors caused by translating the prompt
-
-Two errors can be traced to the literal English wording rather than to a lack of knowledge of Peking opera.
-
-1. **Xuezi rendered as "pleated robe"** (S30-1 to S30-3, Meta AI, P2). The model read "pleated" as a property of the cloth and drew robes with obvious knife pleats. In S30-3 Jiang Gan also wears a square cap resembling an academic mortarboard.
-2. **Yu jia rendered as "fish-shaped cangue"** (S39-1 to S39-3, Doubao, P2). The model read "fish" as a decoration on the board and drew a rectangular wooden board carved with a fish. In the *yu jia*, the fish defines the outline of the cangue itself.
+In both cases a term was translated word by word, and information about form was lost along the way. "Pleated" kept the literal sense of 褶 but lost what *xuezi* refers to as a class of garment. "Fish-shaped" kept the modifying relation with "fish" but lost the outline of the cangue as a whole. This is consistent with the reason given in the Method for listing untested Chinese prompts as a limitation.
 
 ## 4.6 Other anomalies and sensitivity analyses
 
-Four types of anomaly were recorded during coding. None of the images involved was excluded.
+Besides dress-code violations, the outputs showed four kinds of anomaly.
 
-- **Reproduced stock-photo watermark:** Hunyuan, P1, R2, image 2 (S34-2), `www.yanqin.net`.
-- **Anatomical errors:** Bao Zheng seen from behind with the painted face on the back of the head (S10-1 and S10-3, P1; S36-3, P2; all Meta AI).
-- **A second performer in the frame:** S01-1 (Hunyuan, P1).
-- **A modern object in the frame:** the plastic stool in S01-2 (Hunyuan, P1).
+1. **Stock-photo watermark.** The second P1 image of Guan Yu from Hunyuan Image Alpha (S34-2) reproduces the watermark of a third-party image source, `www.yanqin.net`, at the bottom centre of the frame. This suggests that the training data contained such images.
+2. **Anatomical errors.** Three images place the face on the back of the head, so the figure is seen from behind with a painted face (S10-1, S10-3 and S36-3; all Meta AI, all Bao Zheng).
+3. **Unclean frames.** Individual images include a second performer, a modern plastic stool and a birdcage (S01).
+4. **Mismatched role type and gender.** Some images give a role the wrong role type or gender. Jiang Gan appears as a female *dan* (S03-1), and Zhao Yun as a female dancer (S22-3).
 
-**Table 6.** Main analysis and sensitivity analyses (odds ratios).
+All of these images were kept and coded; none was excluded.
 
-| Analysis | P2 | Doubao | Meta AI |
+The study ran six sensitivity analyses, which together with the main analysis form the seven rows of Table 6:
+
+1. excluding the watermarked image;
+2. counting NA as compliant, so that it stays in the denominator;
+3. excluding D3;
+4. excluding D1;
+5. using only coder A's codes before adjudication;
+6. using only coder B's codes.
+
+In all six, every effect pointed in the same direction as in the main analysis. The OR ranged from 0.041 to 0.084 for P2, from 0.100 to 0.180 for Doubao, and from 0.040 to 0.055 for Muse, and all remained below 1. The conclusions did not depend on which codes were used or on whether individual images were kept.
+
+**Table 6.** Sensitivity analyses.
+
+| Analysis | P2 OR | Doubao OR | Muse OR |
 |---|---|---|---|
 | Main analysis (consensus codes) | 0.066 | 0.128 | 0.040 |
 | Excluding the watermarked image | 0.066 | 0.127 | 0.040 |
@@ -133,20 +148,4 @@ Four types of anomaly were recorded during coding. None of the images involved w
 | Coder A only (before adjudication) | 0.063 | 0.100 | 0.040 |
 | Coder B only | 0.041 | 0.180 | 0.055 |
 
-Across the main analysis and the six sensitivity analyses, all three effects pointed the same way:
-
-- P2: OR between 0.041 and 0.084;
-- Doubao: OR between 0.100 and 0.180;
-- Meta AI: OR between 0.040 and 0.055.
-
-None of these ranges crosses 1. The conclusions did not change with exclusions, with a different treatment of missing values, or with a change of coder.
-
-The coder-B-only analysis departed most from the main analysis. Its P2 odds ratio was lower (0.041), while its Doubao (0.180) and Meta AI (0.055) odds ratios were higher. The departure does not reverse any conclusion.
-
----
-
-## Held for the Discussion (author's interpretations, moved from 4.3, 4.5 and 4.6)
-
-- **From 4.3.** The roles share a pattern. Jiang Gan and Su San depend on a specific item for their identity: the tofu-block face and square cap for Jiang Gan, the cangue and red prisoner's dress for Su San. If that item is missing, the whole image is wrong. Yang Yuhuan's phoenix crown, cloud collar and jade belt are large pieces, and a model that captures their outline does not go far wrong.
-- **From 4.5.** Possible mechanism: "scholar's robe" and "academic dress" share associations in English, which may explain the mortarboard. More generally, once a term is translated word by word, the model generates from the literal combination and the information about form is lost. [Speculative; to be phrased as a possibility in the Discussion.]
-- **From 4.6.** Whether an AI coder should serve as a sole judge, to be discussed together with the coders' qualifications. [The original wording "coder B is more polarised" does not match the data, because B's estimates move in different directions for different terms. Rephrase.]
+*Note.* The reference levels are P1 for the strategy effect and Hunyuan Image Alpha for the channel effects. The "coder A only" row uses the original codes before adjudication, so it differs slightly from the main analysis.
