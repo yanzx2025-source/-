@@ -1,4 +1,5 @@
-"""Build the blind package for human coder C.
+"""Build the blind package for human coder C in two steps: step1 (instructions + codebook review sheet)
+is sent first; step2 (images + coding sheet) is sent only after the review sheet has been returned.
 One randomly chosen image per P1/P2 cell (48) plus, if a P3 folder is given, one per channel x role (24),
 renamed H01.. in random order. The key stays in data/coder_C_key.csv.
 Usage: python coder_c_package.py <P1/P2 image dir> <out dir> [<P3 image dir>]"""
@@ -33,13 +34,14 @@ rng.shuffle(pick)
 roles = {'R1': ('诸葛亮', '空城计'), 'R2': ('关羽', '单刀会'), 'R3': ('杨玉环', '贵妃醉酒'),
          'R4': ('穆桂英', '穆桂英挂帅'), 'R5': ('包拯', '铡美案'), 'R6': ('赵云', '长坂坡'),
          'R7': ('苏三', '玉堂春·起解'), 'R8': ('蒋干', '群英会')}
-(out / 'images').mkdir(parents=True, exist_ok=True)
+(out / 'step2' / 'images').mkdir(parents=True, exist_ok=True)
+(out / 'step1').mkdir(parents=True, exist_ok=True)
 rows = []
 with open(P / 'data/coder_C_key.csv', 'w', newline='') as fk:
     w = csv.writer(fk); w.writerow(['hid', 'img', 'model', 'strategy', 'role', 'rep', 'file'])
     for i, r in enumerate(pick, 1):
         hid = f'H{i:02d}'
-        shutil.copy(r['path'], out / 'images' / f"{hid}_{r['role']}.jpg")
+        shutil.copy(r['path'], out / 'step2' / 'images' / f"{hid}_{r['role']}.jpg")
         w.writerow([hid, r['img'], r['model'], r['strategy'], r['role'], r['rep'], r['path'].name])
         rows.append((hid, r['role'], *roles[r['role']]))
 
@@ -62,7 +64,8 @@ items = {
     'R7': ['主服：红罪衣罪裙', '主色：红', '头戴：包头，不戴冠', '配件：鱼形枷、水袖', '俊扮'],
     'R8': ['主服：褶子', '头戴：方巾', '脸：豆腐块丑脸'],
 }
-rv = wb.create_sheet('规制审读')
+wb.save(out / 'step2' / '编码表_编码者C.xlsx')
+wb = Workbook(); rv = wb.active; rv.title = '规制审读'
 rv.append(['角色ID', '角色（剧目）', '规制要点', '判断（同意/不同意/流派差异）', '说明'])
 for rid, its in items.items():
     for it in its:
@@ -76,9 +79,11 @@ dv2 = DataValidation(type='list', formula1='"同意,不同意,流派差异"', al
 dv2.add(f'D2:D{rv.max_row}')
 for c, wd in zip('ABCDE', [8, 22, 40, 26, 50]):
     rv.column_dimensions[c].width = wd
-wb.save(out / '编码表_编码者C.xlsx')
+wb.save(out / 'step1' / '规制审读表_编码者C.xlsx')
 
 md = (P / 'coder_C_instructions.md').read_text(encoding='utf-8').replace('{N}', str(len(rows)))
 tmp = out / '编码说明.md'; tmp.write_text(md, encoding='utf-8')
-subprocess.run(['pandoc', str(tmp), '-o', str(out / '编码说明.docx')], check=True); tmp.unlink()
+for st in ('step1', 'step2'):
+    subprocess.run(['pandoc', str(tmp), '-o', str(out / st / '编码说明.docx')], check=True)
+tmp.unlink()
 print(len(rows), 'images')
