@@ -239,7 +239,7 @@ Han, B. (2019d). Meiru jinxiu: Jingju fuzhuang zhi xuezi [The *xuezi* in Peking 
 
 Han, B. (2019e). Meiru jinxiu: Jingju fuzhuang zhi changyi [Long garments in Peking opera costume]. *Zhongguo Jingju*, (11), 58–63.
 
-Hu, B., & Wang, S. (2026). Digital restoration of traditional Huizhou clothing based on 3D modeling and virtual fitting technology. *The Journal of The Textile Institute, 117*(4), [PAGES]. https://doi.org/[DOI]
+Hu, B., & Wang, S. (2026). Digital restoration of traditional Huizhou clothing based on 3D modeling and virtual fitting technology. *The Journal of The Textile Institute, 117*(4), 808–822. https://doi.org/10.1080/00405000.2025.2520431
 
 Jin, Y., Yoon, J., Self, J. A., & Lee, K. (2024). Understanding fashion designers' behavior using generative AI for early-stage concept ideation and revision. *Archives of Design Research, 37*(3), 25–45. https://doi.org/10.15187/adr.2024.07.37.3.25
 
