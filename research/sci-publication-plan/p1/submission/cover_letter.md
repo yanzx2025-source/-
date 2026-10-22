@@ -1,6 +1,6 @@
 Dear Editor,
 
-Please consider the enclosed manuscript, "Better torn than wrong: auditing three generative AI image services against the Peking opera dress code", for publication in *The Journal of the Textile Institute*.
+Please consider the enclosed manuscript, "Better torn than wrong: auditing three generative AI image services against the Peking opera dress code", for publication in *The Journal of The Textile Institute*.
 
 Generative image tools have entered fashion and stage costume design, and knowing which garment, colour and accessory belong to which wearer is part of the professional knowledge these tools are meant to support. The manuscript tests that knowledge against a written standard, the dress code of Peking opera. I generated 144 images of eight canonical roles in three channels (Doubao, Meta AI and Hunyuan Image Alpha), with and without the dress code stated in the prompt, and coded each image on six dimensions. The images were coded independently by me and by a large language model, and disagreements were adjudicated under logged rules. To my knowledge, this is the first audit of generated opera costume against the dress code itself.
 
