@@ -46,6 +46,14 @@
 ### S1.3 Model attribution and image sizes
 
 WorkBuddy request log: all 51 calls (48 retained images and 3 retries) used model=hunyuan-image-alpha, the only entry tagged text-to-image in the account model list; DeepSeek V4.1 Flash, on the conversation side, drafted no pixels. Native sizes: 1024 × 1024 (WorkBuddy), 2048 × 2048 (Doubao), Muse portrait images 1120 × 2240 (38), 1280 × 1920 (9) and 992 × 2480 (1).
+### S1.4 Planned follow-up: length-matched control (P3)
+
+P2 differed from P1 in both dress-code content and length. A follow-up will add P3, which appends to P1 a passage of similar length (35 words) with no dress-code content, so that P3 prompts (67–72 words) fall within the P2 range (61–77 words):
+
+> The performer stands upright and still, facing the viewer, with the weight evenly balanced. The expression is calm. The figure is centred in the frame, with even margins above the head and below the feet.
+
+P3 against P1 estimates the effect of length; P2 against P3 estimates the effect of dress-code content. A same-day re-run of P1 (one image per cell) will check for drift since the original generation date.
+
 ## S2 Coding reliability, adjudication and sensitivity analyses
 
 ### S2.1 Inter-coder agreement with bootstrap 95% CIs (2,000 resamples of images)
