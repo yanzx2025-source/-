@@ -205,7 +205,7 @@ Asked for a named Peking opera role, three widely used image generators broke th
 
 **Funding.** This research received no specific funding.
 
-**Data availability statement.** The codebook, prompts, both coders' codes, the adjudication log, the analysis scripts and the 144 generated images are deposited at [OSF link and DOI].
+**Data availability statement.** The codebook, prompts, both coders' codes, the adjudication log, the analysis scripts and the 144 generated images are deposited in the Open Science Framework. An anonymised view-only link for peer review is https://osf.io/9g4wv/overview?view_only=c47dc213a8af4b4f8e70ae2d6b03a270; a public DOI will be provided on acceptance.
 
 ---
 
