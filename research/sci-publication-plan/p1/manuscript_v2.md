@@ -1,10 +1,10 @@
-# Better torn than wrong: auditing generative AI images of Peking opera costume against the dress code
+# Better torn than wrong: auditing three generative AI image services against the Peking opera dress code
 
 Zhengxian Yan, Department of Performing Arts and Culture, The Catholic University of Korea, 43 Jibong-ro, Bucheon-si, Gyeonggi-do 14662, Republic of Korea. E-mail: yanzx2025@gmail.com. ORCID: https://orcid.org/0009-0004-2140-5821
 
 ## Abstract
 
-Peking opera costume is governed by a prescriptive dress code that assigns garment type, colour, pattern, headwear and emblematic props to each role, yet generative image models now produce such costumes without any audit against it. I generated 144 full-body images of eight canonical roles in three commercial channels (Doubao, Meta AI, Hunyuan Image Alpha) under two prompt designs: a minimal prompt naming only role and play, and a structured one specifying the codified attributes. Six dimensions were coded for each image, giving 791 analysable judgements (inter-coder κ = 0.70). Only 38.9% of images were fully compliant, with errors concentrated in headwear and small emblematic items. Specifying the code reduced the odds of violation to 6.6% of the minimal condition (OR 0.066, 95% CI 0.038–0.116, p < .001), with no channel-by-strategy interaction. The models reproduce the appearance of Peking opera costume but not the rules that assign it.
+Peking opera costume is governed by a prescriptive dress code that assigns garment type, colour, pattern, headwear and emblematic props to each role, yet generative image models now produce such costumes without any audit against it. I generated 144 full-body images of eight canonical roles in three commercial channels (Doubao, Meta AI, Hunyuan Image Alpha) under two prompt designs: a minimal prompt naming only role and play, and a structured one specifying the codified attributes. Six dimensions were coded for each image, giving 791 analysable judgements (inter-coder κ = 0.70). Only 38.9% of images were fully compliant, with errors concentrated in headwear and small emblematic items. Specifying the code reduced the odds of violation to 6.6% of the minimal condition (OR 0.066, 95% CI 0.038–0.116, p < .001), with no channel-by-strategy interaction. The three channels reproduce the appearance of Peking opera costume but not the rules that assign it.
 
 **Keywords:** Peking opera costume; dress code; generative AI; cultural accuracy; prompt design; content analysis
 
@@ -42,7 +42,7 @@ Two gaps follow from this literature. No study has yet audited generated costume
 
 ### 2.1 Design
 
-The study used a 3 × 2 × 8 factorial design with three generation channels (Doubao, Meta AI, and Hunyuan Image Alpha through Tencent WorkBuddy), two prompt strategies (P1, role and play only; P2, role and play plus the dress code) and eight roles. Each cell produced three images, 144 in total, and the roles were held constant across conditions as a blocking factor. Coding each image on six dimensions gave 864 cells. Seventy-three were coded NA, 71 of them because colour was not scored for four roles and 2 because accessories were hidden, leaving 791 items for analysis.
+The study used a 3 × 2 × 8 factorial design with three generation channels (Doubao, Meta AI, and Hunyuan Image Alpha through Tencent WorkBuddy), two prompt strategies (P1, role and play only; P2, role and play plus the dress code) and eight roles. The channels are a purposive sample of tools that a designer in my position could readily use, not a representative sample of image generators: Doubao, one of the most widely used AI assistants in China; Meta AI, from one of the leading international developers; and Tencent WorkBuddy, a work platform I used regularly, which gave access to Tencent's Hunyuan image model. Each cell produced three images, 144 in total, and the roles were held constant across conditions as a blocking factor. Coding each image on six dimensions gave 864 cells. Seventy-three were coded NA, 71 of them because colour was not scored for four roles and 2 because accessories were hidden, leaving 791 items for analysis.
 
 ### 2.2 Roles
 
@@ -107,7 +107,7 @@ The coders agreed on 84.7% of cells before adjudication (κ = 0.70; Table 2). Ag
 
 ### 3.2 Overall compliance (RQ1)
 
-Fifty-six of the 144 images (38.9%) complied on all six dimensions. Under P1 the channels differed widely (Table 3, Figure 1). Hunyuan Image Alpha broke the code on 75.9% of codable items and produced no fully compliant image, Meta AI broke it on 19.8% with 11 of 24 images fully compliant, and Doubao fell in between.
+Fifty-six of the 144 images (38.9%) complied on all six dimensions. Under P1 the channels differed widely (Table 3, Figure 1). Hunyuan Image Alpha broke the code on 75.9% of codable items and produced no fully compliant image, Meta AI broke it on 19.8% with 11 of 24 images fully compliant, and Doubao fell in between. The channels differed in how many errors they made more than in where they made them: headwear was among the two most frequently violated dimensions and cross-cultural substitution the least frequent in all three channels (Supplementary material S2).
 
 **Table 3.** Violations by channel and prompt strategy.
 
@@ -167,7 +167,7 @@ One Hunyuan Image Alpha image reproduced the watermark of a stock-photo site, `w
 
 The consort and the woman general (huashan and daomadan) had the fewest violations; the clown, the prisoner and the strategist (wenchou, qingyi and laosheng) the most (Table 5). Costume complexity does not explain the difference. Yang Yuhuan's phoenix crown, cloud collar and jade belt, or Mu Guiying's flags and plumes, are no simpler than Su San's cangue. A likelier reason is how often and how clearly each type appears in the training data. The consort and the woman general resemble widely circulated "palace" and "warrior" images, and a model can reach them by visual resemblance alone. The strategist, the prisoner and the clown are different. Zhuge Liang's bagua robe belongs to him as a person, Su San's red dress and cangue to her situation, and Jiang Gan's tofu-block face and square cap to the conventions of his role type. These links are rules of the stage, and they rarely appear together in ordinary images.
 
-The models seem to have learned what Peking opera costume looks like without learning who may wear what. The dress code ties each costume to a character, a role type and a play at once, whereas a generative model is only asked for something that looks like Peking opera. Every one of the 144 images was recognisable as a theatre figure, and fewer than four in ten were correct.
+The three channels seem to have learned what Peking opera costume looks like without learning who may wear what. The dress code ties each costume to a character, a role type and a play at once, whereas a generative model is only asked for something that looks like Peking opera. Every one of the 144 images was recognisable as a theatre figure, and fewer than four in ten were correct.
 
 ### 4.2 Stating the dress code works for those who already know it
 
@@ -177,7 +177,7 @@ This bears on the claim that generative AI "democratises" design. It makes drawi
 
 ### 4.3 Small markers carry the most meaning
 
-The smallest items in a costume do most of the work of identification: the crescent, the cangue, the clown patch, the back flags, the plumes. In a designer's terms they belong to the symbolic layer of the costume, the garment to its structure. A python robe drawn imperfectly is still a theatre costume; without the crescent, Bao Zheng is no longer Bao Zheng. Image models are trained to match overall appearance, so they are weakest exactly where an element is small and carries much of the meaning. The coding struggled at the same point, since most D5 disagreements concerned whether a substitute counts. Future audits should define identifying markers as separate yes-or-no items.
+The smallest items in a costume do most of the work of identification: the crescent, the cangue, the clown patch, the back flags, the plumes. In a designer's terms they belong to the symbolic layer of the costume, the garment to its structure. A python robe drawn imperfectly is still a theatre costume; without the crescent, Bao Zheng is no longer Bao Zheng. Image models are trained mainly to match overall appearance, which may explain why these channels were weakest exactly where an element is small and carries much of the meaning. The coding struggled at the same point, since most D5 disagreements concerned whether a substitute counts. Future audits should define identifying markers as separate yes-or-no items.
 
 ### 4.4 Translation as a source of error
 
@@ -189,11 +189,11 @@ Three habits follow for costume designers. Review generated costumes against a c
 
 ### 4.6 Limitations
 
-The study tested three consumer channels on a single day with English prompts. Their internal prompt handling could not be observed, model updates may change the results, and the effects of language and channel could not be separated. Blinding was incomplete for two of the three channels. The second coder was a language model, and coder A consulted an AI assistant for references and terminology while coding. Sources differ on whether Guan Yu's helmet may carry plumes; treating those three images as compliant does not change the conclusions (Supplementary material S2). The eight roles cover part of the repertoire, with three images per condition, and fine detail was not assessed.
+The study tested three consumer channels on a single day with English prompts. Their internal prompt handling could not be observed, model updates may change the results, and the effects of language and channel could not be separated. Blinding was incomplete for two of the three channels. The second coder was a language model, and coder A consulted an AI assistant for references and terminology while coding. Sources differ on whether Guan Yu's helmet may carry plumes; treating those three images as compliant does not change the conclusions (Supplementary material S2). The eight roles cover part of the repertoire, with three images per condition, and fine detail was not assessed. The three channels were a purposive sample, so the differences between them should not be read as a ranking of products, and whether other generators, including open-source models, show the same pattern needs separate testing.
 
 ## 5 Conclusion
 
-Asked for a named Peking opera role, three widely used image generators broke the dress code more often than they kept it, most of all in headwear and the small markers that identify a character. Writing the code into the prompt prevented most of these errors, but only a user who already knows the code can write it. The models reproduce the look of the costume without the knowledge of who may wear what. They can draw a costume for a designer; deciding whether it is right is still the designer's work.
+Asked for a named Peking opera role, three widely used image generators broke the dress code more often than they kept it, most of all in headwear and the small markers that identify a character. Writing the code into the prompt prevented most of these errors, but only a user who already knows the code can write it. The three channels reproduce the look of the costume without the knowledge of who may wear what. They can draw a costume for a designer; deciding whether it is right is still the designer's work.
 
 ---
 

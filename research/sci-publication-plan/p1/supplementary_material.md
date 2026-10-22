@@ -75,3 +75,13 @@ The coders disagreed on 132 cells across 78 images. Nine were settled by explici
 | Coder A only (before adjudication) | 0.063 | 0.100 | 0.040 |
 | Coder B only | 0.041 | 0.180 | 0.055 |
 | Plumes on Guan Yu's helmet counted as compliant (S16-1 to S16-3, D4 = 0) | 0.070 | 0.118 | 0.041 |
+
+### S2.4 Violation rate by dimension within each channel (both strategies pooled; % of codable items)
+
+| Channel | D1 | D2 | D3 | D4 | D5 | D6 |
+|---|---|---|---|---|---|---|
+| Hunyuan Image Alpha | 56.2 | 48.0 | 56.2 | 66.7 | 53.2 | 25.0 |
+| Doubao | 18.8 | 25.0 | 20.8 | 33.3 | 37.5 | 0.0 |
+| Meta AI | 8.3 | 8.3 | 6.2 | 20.8 | 21.3 | 2.1 |
+
+Headwear (D4) is the highest or second-highest dimension in every channel, and cross-cultural substitution (D6) the lowest.
