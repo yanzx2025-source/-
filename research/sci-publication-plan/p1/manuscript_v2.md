@@ -159,13 +159,13 @@ Two errors came from the English wording of the prompt. Rendered as "pleated rob
 
 ### 3.6 Other anomalies and robustness
 
-One Hunyuan Image Alpha image reproduced the watermark of a stock-photo site, `www.yanqin.net` (S34-2). Three Meta AI images of Bao Zheng painted his face on the back of his head (S10-1, S10-3, S36-3). Other images showed a second performer and a plastic stool in the frame (S01) or gave a role the wrong gender or role type (S03-1, S22-3). In the seven sensitivity analyses the OR for P2 ranged from 0.041 to 0.084, for Doubao from 0.100 to 0.180 and for Meta AI from 0.040 to 0.055 (Supplementary material S2).
+One Hunyuan Image Alpha image reproduced the watermark of a website, `www.yanqin.net` (S34-2). Three Meta AI images of Bao Zheng painted his face on the back of his head (S10-1, S10-3, S36-3). Other images showed a second performer and a plastic stool in the frame (S01) or gave a role the wrong gender or role type (S03-1, S22-3). In the seven sensitivity analyses the OR for P2 ranged from 0.041 to 0.084, for Doubao from 0.100 to 0.180 and for Meta AI from 0.040 to 0.055 (Supplementary material S2).
 
 ## 4 Discussion
 
 ### 4.1 Knowing the wardrobe without knowing the casting
 
-The consort and the woman general (huashan and daomadan) had the fewest violations; the clown, the prisoner and the strategist (wenchou, qingyi and laosheng) the most (Table 5). Costume complexity does not explain the difference. Yang Yuhuan's phoenix crown, cloud collar and jade belt, or Mu Guiying's flags and plumes, are no simpler than Su San's cangue. A likelier reason is how often and how clearly each type appears in the training data. The consort and the woman general resemble widely circulated "palace" and "warrior" images, and a model can reach them by visual resemblance alone. The strategist, the prisoner and the clown are different. Zhuge Liang's bagua robe belongs to him as a person, Su San's red dress and cangue to her situation, and Jiang Gan's tofu-block face and square cap to the conventions of his role type. These links are rules of the stage, and they rarely appear together in ordinary images.
+The consort and the woman general (huashan and daomadan) had the fewest violations; the clown, the prisoner and the strategist (wenchou, qingyi and laosheng) the most (Table 5). Costume complexity does not explain the difference. Yang Yuhuan's phoenix crown, cloud collar and jade belt, or Mu Guiying's flags and plumes, are no simpler than Su San's cangue. One possible reason is how often and how clearly each type appears in the training data. The consort and the woman general resemble widely circulated "palace" and "warrior" images, and a model can reach them by visual resemblance alone. The strategist, the prisoner and the clown are different. Zhuge Liang's bagua robe belongs to him as a person, Su San's red dress and cangue to her situation, and Jiang Gan's tofu-block face and square cap to the conventions of his role type. These links are rules of the stage, and they rarely appear together in ordinary images.
 
 The three channels seem to have learned what Peking opera costume looks like without learning who may wear what. The dress code ties each costume to a character, a role type and a play at once, whereas a generative model is only asked for something that looks like Peking opera. Every one of the 144 images was recognisable as a theatre figure, and fewer than four in ten were correct.
 
@@ -173,7 +173,7 @@ The three channels seem to have learned what Peking opera costume looks like wit
 
 Writing garment, colour, motif, headwear, accessories and face into the prompt cut the odds of a violation by more than an order of magnitude in every channel. The information that made this possible came from published sources, stage practice and the designer's own training. The model contributed none of it.
 
-This bears on the claim that generative AI "democratises" design. It makes drawing cheap, but knowing what is correct costs as much as before, and that knowledge now carries more of the weight. It also means the prompt cannot replace review: two thirds of Hunyuan Image Alpha's P2 images still contained an error. One might object that P2 simply hands the model the answers. That is what the comparison was designed to test, and the answer is mixed. Models followed stated rules on colour almost perfectly but kept failing on the headwear and small markers that had failed under P1, which suggests that some rules are hard for these systems to carry out even when they are written down. Both translation errors (Section 3.5) also occurred under P2, so the estimated benefit of stating the code is, if anything, conservative.
+Generative tools make drawing cheap, but knowing what is correct costs as much as before, and that knowledge now carries more of the weight. It also means the prompt cannot replace review: two thirds of Hunyuan Image Alpha's P2 images still contained an error. One might object that P2 simply hands the model the answers. That is what the comparison was designed to test, and the answer is mixed. Models followed stated rules on colour almost perfectly but kept failing on the headwear and small markers that had failed under P1, which suggests that some rules are hard for these systems to carry out even when they are written down. Both translation errors (Section 3.5) also occurred under P2, so the estimated benefit of stating the code is, if anything, conservative.
 
 ### 4.3 Small markers carry the most meaning
 
@@ -193,7 +193,7 @@ The study tested three consumer channels on a single day with English prompts. T
 
 ## 5 Conclusion
 
-Asked for a named Peking opera role, three widely used image generators broke the dress code more often than they kept it, most of all in headwear and the small markers that identify a character. Writing the code into the prompt prevented most of these errors, but only a user who already knows the code can write it. The three channels reproduce the look of the costume without the knowledge of who may wear what. They can draw a costume for a designer; deciding whether it is right is still the designer's work.
+Asked for a named Peking opera role, three image generators broke the dress code more often than they kept it, most of all in headwear and the small markers that identify a character. Writing the code into the prompt prevented most of these errors, but only a user who already knows the code can write it. The three channels reproduce the look of the costume without the knowledge of who may wear what. They can draw a costume for a designer; deciding whether it is right is still the designer's work.
 
 ---
 
