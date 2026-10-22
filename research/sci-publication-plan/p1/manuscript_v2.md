@@ -1,6 +1,6 @@
 # Better torn than wrong: auditing generative AI images of Peking opera costume against the dress code
 
-[Author name], Department of Performing Arts and Culture, The Catholic University of Korea, [address], [e-mail]. ORCID: https://orcid.org/0009-0004-2140-5821
+Zhengxian Yan, Department of Performing Arts and Culture, The Catholic University of Korea, 43 Jibong-ro, Bucheon-si, Gyeonggi-do 14662, Republic of Korea. E-mail: yanzx2025@gmail.com. ORCID: https://orcid.org/0009-0004-2140-5821
 
 ## Abstract
 
