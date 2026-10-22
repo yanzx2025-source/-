@@ -42,7 +42,7 @@ Two gaps follow from this literature. No study has yet audited generated costume
 
 ### 2.1 Design
 
-The study used a 3 × 2 × 8 factorial design with three generation channels (Doubao, Meta AI, and Hunyuan Image Alpha through Tencent WorkBuddy), two prompt strategies (P1, role and play only; P2, role and play plus the dress code) and eight roles. The channels are a purposive sample of tools that a designer in my position could readily use, not a representative sample of image generators: Doubao, one of the most widely used AI assistants in China; Meta AI, from one of the leading international developers; and Tencent WorkBuddy, a work platform I used regularly, which gave access to Tencent's Hunyuan image model. Each cell produced three images, 144 in total, and the roles were held constant across conditions as a blocking factor. Coding each image on six dimensions gave 864 cells. Seventy-three were coded NA, 71 of them because colour was not scored for four roles and 2 because accessories were hidden, leaving 791 items for analysis.
+The study used a 3 × 2 × 8 factorial design with three generation channels (Doubao, Meta AI, and Hunyuan Image Alpha through Tencent WorkBuddy), two prompt strategies (P1, role and play only; P2, role and play plus the dress code) and eight roles. The channels are a purposive sample of tools that a designer in my position could readily use, not a representative sample of image generators: Doubao, the AI-native app with the most monthly active users in China in 2026 (QuestMobile, 2026); Meta AI, from one of the leading international developers; and Tencent WorkBuddy, a work platform I used regularly, which gave access to Tencent's Hunyuan image model. Each cell produced three images, 144 in total, and the roles were held constant across conditions as a blocking factor. Coding each image on six dimensions gave 864 cells. Seventy-three were coded NA, 71 of them because colour was not scored for four roles and 2 because accessories were hidden, leaving 791 items for analysis.
 
 ### 2.2 Roles
 
@@ -242,6 +242,8 @@ Liu, C., & Xu, Z. (2021). Cong "chuanguan" zhidai neirong yanbian kan chuantong 
 Liu, K., Gao, Y., Zhang, J., & Zhu, C. (2022). Study on digital protection and innovative design of Qin opera costumes. *Heritage Science, 10*, 127. https://doi.org/10.1186/s40494-022-00762-x
 
 Liu, Y. (2002). *Zhongguo jingju yixiang* [The Chinese Peking opera costume trunk]. Shanghai Lexicographical Publishing House.
+
+QuestMobile. (2026). *2026 nian AI yingyong shichang fazhan bannianbao* [2026 half-year report on the development of the AI application market]. https://www.questmobile.com.cn/research/report/2076954943839809537/
 
 Ren, J., Shu, Y., Yang, S., Zhang, B., Yang, Z., Liu, N., & Liu, Z. (2026). Digital reconstruction and motion-based interactive presentation of Qing dynasty court opera costumes. *Journal on Computing and Cultural Heritage*. Advance online publication. https://doi.org/10.1145/3842671
 
